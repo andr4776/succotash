@@ -1,15 +1,15 @@
 jQuery(document).ready(function() {
-	
+
     /*
         Background slideshow
     */
     $('.top-content').backstretch("assets/img/backgrounds/1.jpg");
-    
+
     /*
         Wow
     */
     new WOW().init();
-    
+
     /*
         Search form
     */
@@ -19,5 +19,49 @@ jQuery(document).ready(function() {
     	$('.navbar-header, .navbar-menu-items, .navbar-search-form').toggleClass('disabled');
     	$('.navbar-search-form input.search').val('').focus();
     });
-	
+
 });
+/*
+		 Countdown initializer
+ */
+ var now = new Date();
+ var countTo = 24 * 46 * 60 * 60 * 1000 + now.valueOf();
+ $('.timer').countdown(countTo, function(event) {
+	 $(this).find('.days').text(event.offset.totalDays);
+	 $(this).find('.hours').text(event.offset.hours);
+	 $(this).find('.minutes').text(event.offset.minutes);
+	 $(this).find('.seconds').text(event.offset.seconds);
+ });
+
+/*
+    Validation form
+  */
+
+  function ValidateEmail (mail){
+    if (document.queryForm.inputFirstName.value == ""){
+      alert ( "First name is required please");
+      document.queryForm.inputFirstName.focus();
+      return false;
+    }
+    if (document.queryForm.inputLastName.value == ""){
+      alert ("Last name is required please");
+      document.queryForm.inputLastName.focus();
+      return false;
+    }
+    if (document.queryForm.inputUserName.value == ""){
+      alert ("User name is required please");
+      document.queryForm.inputUserName.focus();
+      return false;
+    }
+    if (document.queryForm.inputEmail.value == "" ){
+      alert (" Email is required please");
+      document.queryForm.inputEmail.focus();
+      return false;
+    }
+      if (document.queryForm.inputQuery.value == ""){
+        alert ( "Your query please");
+        document.queryForm.inputQuery.focus();
+        return false;
+       }
+       return true;
+      }
