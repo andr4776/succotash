@@ -142,7 +142,7 @@ ul:active { color: #0fec96}
 .top-content .description a { color: #fff; border-bottom: 1px dotted #fff; }
 .top-content .description a:hover, .top-content .description a:focus { color: #fff; border: 0; }
 
-.queryForm .form-group input {color: #d7103a; border-color:#d7103a }
+.inputEmail .form-group . /*form-email:invalid {border-color:#d7103a }*/
 
 .timer {
     margin-top: 50px;

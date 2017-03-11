@@ -37,7 +37,7 @@ jQuery(document).ready(function() {
     Validation form
   */
 
-  function ValidateEmail (mail){
+  /*function ValidateEmail (mail){
     if (document.queryForm.inputFirstName.value == ""){
       alert ( "First name is required please");
       document.queryForm.inputFirstName.focus();
@@ -65,3 +65,24 @@ jQuery(document).ready(function() {
        }
        return true;
       }
+*/
+ /*
+  Validation form
+  */
+  function ValidateEmail(inputText)
+  {
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if(inputText.value.match(mailformat))
+    {
+      alert("Thank You, Email Adress Valid ");
+      document.form1.inputEmail.focus();
+      return true;
+
+    }
+    else {
+      alert("You have entered an invalid email address!");
+      document.form1.inputEmail.focus().style.border ="red";
+      return false;
+
+    }
+  }

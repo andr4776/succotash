@@ -30,7 +30,7 @@
         <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 
     </head>
-    <body>
+    <body onload="document.form1.text1.focus()">
 
 		<!-- Top menu -->
 		<nav class="navbar navbar-inverse" role="navigation">
@@ -110,7 +110,7 @@
 	                </div>
 	                <div class="col-sm-6 features-box wow fadeInLeft">
 
-                    <form role="form" action="formSubmitted.php" method="post" class="queryForm" onsubmit=" return(formValidate()); " novalidate=" ">
+                    <form name="form1" role="form" action="#" method="post" class="inputEmail" onsubmit=" return(formValidate()) " novalidate=" ">
 
                       <div class="form-group">
                         <label class="sr-only" for="inputEmail">E-mail</label>
@@ -118,9 +118,11 @@
                         </div>
                         <div class="form-group">
                           <label class="sr-only" for="inputQuery">Message</label>
-                          <input type="password" name="inputQuery" required placeholder="Enter Your Message..." class="form-inquery form-control" id="form-inquery">
+                          <textarea name="inputMessage" required placeholder="Enter Your Message..." class="form-inquery form-control" ></textarea>
                         </div>
-                        <button type="submit" class="btn" value="Submit"></button>
+
+                        <button type="submit" class="btn" onclick="ValidateEmail(document.form1.inputEmail)"></button>
+
                     </form>
 
 	                </div>
