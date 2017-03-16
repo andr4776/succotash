@@ -34,8 +34,39 @@ jQuery(document).ready(function() {
  });
 
 /*
-    Validation form
+    CUSTOM JAVASCRIPT --- VALIDATION ----- EMPTY FIELD
   */
+function required()
+{
+var empt = document.forms["form1"]["form-email"].value;
+  if (empt =="")
+  {
+    alert("Please input your email")
+    return false;
+  }
+  else {
+    return true;
+  }
+}
+
+function EmptyValidation(formEmail)
+{
+  if (formEmail.value.length == 0)
+  {
+    document.formEmail.style.border = "#ed7b28";
+      alert("Please fill in empty fields");
+  }
+  else {
+    document.formEmail.style.border = "#e91575";
+  }
+  alert("Please fill in empty fields")
+  return console.error();
+}
+
+
+
+
+
 
   /*function ValidateEmail (mail){
     if (document.queryForm.inputFirstName.value == ""){
