@@ -6,16 +6,17 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>SuccotashLenta Login Form</title>
+        <title>SuccotashLenta Login</title>
 
-        <!-- CSS -->
+        <!-- core CSS -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 		    <link rel="stylesheet" href="assets/css/form-elements.css">
         <link rel="stylesheet" href="assets/css/style.css">
 
-
+        <!-- custom styles for the form -->
+        <link href="" ref =""
 
         <!-- Favicon and touch icons -->
         <link rel="shortcut icon" href="assets/ico/favicon.png">
@@ -51,11 +52,11 @@
   						</div>
   					</form>
   					<ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
-  						<li><a href="Index.php">Home</a></li>
-  						<li><a href="Login.php" class="active">Login</a></li>
-  						<li><a href="Profile.php">MyProfile</a></li>
-  						<li><a href="VBlog.php" >VBlog</a></li>
-  						<li><a href="Intouch.php">InTouch</a></li>
+  						<li><a href="index.php">Home</a></li>
+  						<li><a href="login.php" class="active">Login</a></li>
+  						<li><a href="profile.php">MyProfile</a></li>
+  						<li><a href="vblog.php" >VBlog</a></li>
+  						<li><a href="intouch.php">InTouch</a></li>
   					</ul>
   				</div>
   			</div>
@@ -67,7 +68,7 @@
 
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2 text">
-                            <h1>Succotash<strong>Lenta</strong> Login Form</h1>
+                            <h1>Succotash<strong>Lenta</strong> Studio37</h1>
                             <div class="description">
                             	<p>
 

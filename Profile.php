@@ -54,11 +54,11 @@
 						</div>
 					</form>
 					<ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
-						<li><a href="Index.php">Home</a></li>
-						<li><a href="Login.php">Login</a></li>
-						<li><a class="active" ahref="Profile.php">MyProfile</a></li>
-						<li><a href="VBlog.php">VBlog</a></li>
-						<li><a href="Intouch.php">InTouch</a></li>
+						<li><a href="index.php">Home</a></li>
+						<li><a href="login.php">Login</a></li>
+						<li><a class="active" ahref="profile.php">MyProfile</a></li>
+						<li><a href="vblog.php">VBlog</a></li>
+						<li><a href="intouch.php">InTouch</a></li>
 					</ul>
 				</div>
 			</div>
