@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,12 +37,12 @@
   						<span class="icon-bar"></span>
   						<span class="icon-bar"></span>
   					</button>
-  					<a class="navbar-brand" href="index.html">Hedgehog's login page</a>
+  					<a class="navbar-brand" href=""></a>
   				</div>
   				<!-- Collect the nav links, forms, and other content for toggling -->
   				<div class="collapse navbar-collapse" id="top-navbar-1">
   					<ul class="nav navbar-nav navbar-right navbar-search-button">
-  						<li><a class="search-button" href="index.php"><i class="fa fa-search"></i></a></li>
+  						<li><a class="search-button" href=""><i class="fa fa-search"></i></a></li>
   					</ul>
   					<form class="navbar-form navbar-search-form disabled wow fadeInLeft" role="form" action="" method="post">
   						<div class="form-group">
@@ -53,8 +51,8 @@
   					</form>
   					<ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
   						<li><a href="index.php">Home</a></li>
-  						<li><a href="login.php" class="active"  >Login</a></li>
-
+  						<li><a href="login.php" class="active">Login</a></li>
+  						<li><a href="profile.php">MyProfile</a></li>
   						<li><a href="vblog.php" >VBlog</a></li>
   						<li><a href="intouch.php">InTouch</a></li>
   					</ul>
@@ -68,11 +66,11 @@
 
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2 text">
-                            <h1>Hedgehog<strong>Fun</strong> Studio37</h1>
+                            <h1>New edge<strong></strong> for the hedge</h1>
                             <div class="description">
                             	<p>
 
-	                            	<strong>Lenta</strong></a>
+	                            	<strong>DG</strong></a>
                             	</p>
                             </div>
                         </div>
@@ -82,32 +80,48 @@
                         	<div class="form-top">
                         		<div class="form-top-left">
                         			<h3>Hedgehog's </h3>
-                            		<p>Enter your username and password</p>
+                            		<p>Join the hedging fund </p>
                         		</div>
                         		<div class="form-top-right">
-
-                        			<i class="fa fa-lock "></i>
-                              <br><br>
+                        			<i class="fa fa-lock"></i>
+                              <br>
                         		</div>
                             </div>
                             <div class="form-bottom">
 			                    <form role="form" name="form1" action="" method="post" class="login-form" onsubmit="required()">
-			                    	<div class="form-group">
-			                    		<label class="sr-only" for="form-email"></label>
-			                        	<input type="text" name="formEmail" placeholder="Email..." class="form-control"  id="form-email">
+			                    	  <div class="form-group">
+			                    		<label class="sr-only" for="form-firstName"></label>
+			                        	<input type="text" name="formEmail" placeholder="First Name" class="form-control"  id="form-firstName" required autofocus>
 			                        </div>
+                              <div class="form-group">
+                             <label class="sr-only" for="form-lastName"></label>
+                               <input type="text" name="formLastName" placeholder="Last Name" class="form-lastName form-control"  id="form-lastName" required="">
+                             </div>
+                             <div class="form-group">
+                             <label class="sr-only" for="form-userName"></label>
+                               <input type="text" name="formUserName" placeholder="User Name" class="form-userName form-control"  id="form-userName" required="">
+                             </div>
+                             <div class="form-group">
+                             <label class="sr-only" for="form-email"></label>
+                               <input type="text" name="formEmail" placeholder="Email" class="form-email form-control"  id="form-email" onmouseover  oninvalid="red">
+                             </div>
+
+                             <p> </p>
 			                        <div class="form-group">
 			                        	<label class="sr-only" for="form-password">Password</label>
-			                        	<input type="password" name="form-password" placeholder="Password..." class="form-control" id="form-password">
+			                        	<input type="password" name="form-password" placeholder="Password ..." class="form-password form-control" id="form-password">
 			                        </div>
-                              <div class="col-sm-3 col-sm-offset-2 ">
-			                        <button type="login" class="btn btn-lg">Login</button>
+                              <div class = "form-group">
+                                <div class = "col-sm-6 col-sm-offset-3 form-box">
+                                  <div class = "checkbox">
+                                    <label><input type = "checkbox"> Remember me</label>
+                                  </div>
+                                </div>
                               </div>
-                              <button type="sign up" class="btn btn-lg" href = "register.php">Join in</button>
-                              </dev>
-                            </div>
-			                    </form>
 
+                              <br>
+			                        <button type="submit" class="btn btn-block btn-success"  onsubmit=" ">get me registered! </button>
+			                    </form>
 		                    </div>
                         </div>
                     </div>

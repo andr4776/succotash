@@ -113,7 +113,7 @@
 
                       <div class="form-group">
                         <label class="sr-only" for="inputEmail">E-mail</label>
-                          <input type="text" name="inputEmail" required placeholder="Enter Your e-mail address.." class="form-email form-control" id="form-username">
+                          <input type="text" name="inputEmail" placeholder="Enter Your e-mail address.."  class="form-email form-control" id="form-username" required >
                         </div>
                         <div class="form-group">
                           <label class="sr-only" for="inputQuery">Message</label>
@@ -121,7 +121,7 @@
                         </div>
 
                         <button type="submit" class="btn" onclick="ValidateEmail(document.form1.inputEmail)"></button>
-
+                        <button type="submit" class="btn" onclick="ValidateEmail(document.form1.inputEmail)"></button>
                     </form>
 
 	                </div>
