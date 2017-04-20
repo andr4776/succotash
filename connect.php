@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
 $username = "andr4776";
-$password = "secret";
-$dbname = "db_hedgehog";
+$password = "studio";
+$dbname = "photo_studio";
 
 // create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
