@@ -1,8 +1,7 @@
-<?php require_once("../includes/initialize.php"); ?>
-
-<?php include_layout_template('header.php'); ?>
-<?php
-$user = User::find_by_id(1);
+<?php require_once("../../includes/initialize.php");?>
+ <?php include_layout_template('header.php');?>
+ <?php
+ $user = User::find_by_id(1);
 echo $user->full_name();
 
 echo "<hr />";
@@ -12,10 +11,8 @@ foreach($users as $user) {
   echo "User: ". $user->username ."<br />";
   echo "Name: ". $user->full_name() ."<br /><br />";
 }
-
 ?>
-<?php include_layout_template('footer.php'); ?>
- <html lang="en">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -86,3 +83,4 @@ foreach($users as $user) {
       <script src="assets/js/placeholder.js"></script>
   <![endif]-->
 </html>
+<?php include_layout_template('footer.php'); ?>

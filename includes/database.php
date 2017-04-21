@@ -1,5 +1,5 @@
 <?php
-require_once("config.php");
+require_once(LIB_PATH.DS."config.php");
 
 class MySQLDatabase {
 
@@ -15,7 +15,7 @@ class MySQLDatabase {
   }
 
 	public function open_connection() {
-		$this->connection = mysql_connect(DB_SERVER, DB_USER, DB_PASS);
+		$this->connection = mysql_connect(DB_SERVER, DB_USER, DB_PASS);// assign to the attribute connection
 		if (!$this->connection) {
 			die("Database connection failed: " . mysql_error());
 		} else {
@@ -81,7 +81,7 @@ class MySQLDatabase {
 
 }
 
-$database = new MySQLDatabase();
-$db =& $database;
+$database = new MySQLDatabase(); // database variable which available on any page which loads in this database
+$db =& $database; // another reference
 
 ?>

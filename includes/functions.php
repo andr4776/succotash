@@ -22,7 +22,8 @@ function output_message($message="") {
     return "";
   }
 }
-/*
+
+// Safety net
 function __autoload($class_name) {
 	$class_name = strtolower($class_name);
   $path = LIB_PATH.DS."{$class_name}.php";
@@ -55,5 +56,5 @@ function datetime_to_text($datetime="") {
   $unixdatetime = strtotime($datetime);
   return strftime("%B %d, %Y at %I:%M %p", $unixdatetime);
 }
-*/
+
 ?>
