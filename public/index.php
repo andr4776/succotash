@@ -22,57 +22,94 @@
 
 ?>
 <?php include_layout_template('header.php'); ?>
+<!-- Top content -->
+<!-- Top content -->
+		<div class="top-content">
+				<div class="container">
 
+						<div class="row">
+								<div class="col-sm-12 text wow fadeInLeft">
+										<h1>Succotash<strong>Lenta</strong> Studio37</h1>
+										<div class="description">
+											<p class="medium-paragraph">
 
-<div class="row">
-    <div class="col-sm-8 col-sm-offset-2 text">
-        <h1>Succotash<strong>Lenta</strong> Studio37</h1>
-        <div class="description">
-          <p>
+											</p>
+										</div>
+								</div>
+						</div>
 
-            <strong></strong></a>
-          </p>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-sm-6 col-sm-offset-3 form-box">
-      <div class="form-top">
-        <div class="form-top-left">
-          <h3>Admin assistant</h3>
-            <p>Login to proceed </p>
-        </div>
-        <div class="form-top-right">
-          <i class="fa fa-lock"></i>
-          <br>
-        </div>
-        </div>
-        <div class="form-bottom">
-      <form role="form" name="form1" action="" method="post" class="login-form" onsubmit="required()">
+				</div>
+		</div>
 
-         <div class="form-group">
-         <label class="sr-only" for="form-userName"></label>
-           <input type="text" name="formUserName" placeholder="User Name" class="form-userName form-control"  id="form-userName" required="">
-         </div>
+		<!-- Features -->
+		<div class="features-container section-container">
+			<div class="container">
 
-         <p> </p>
-          <div class="form-group">
-            <label class="sr-only" for="form-password">Password</label>
-            <input type="password" name="form-password" placeholder="Password ..." class="form-password form-control" id="form-password">
-          </div>
-          <div class = "form-group">
-            <div class = "col-sm-6 col-sm-offset-3 form-box">
-              <div class = "checkbox">
-                <label><input type = "checkbox"> Remember me</label>
-              </div>
-            </div>
-          </div>
+					<div class="row">
+							<div class="col-sm-12 features section-description wow fadeIn">
+									<h2>SuccotashLenta Admin bar</h2>
+									<div class="divider-1 wow fadeInUp"><span></span></div>
+							</div>
+					</div>
 
-          <br>
-          <button type="submit" class="btn btn-block btn-success"  onsubmit=" ">Login </button>
-      </form>
-    </div>
-    </div>
-</div>
+					<div class="row">
+							<div class="col-sm-6 features-box wow fadeInLeft">
+								<div class="row">
+									<div class="col-sm-3 features-box-icon">
+										<i class="fa fa-eye"></i>
+									</div>
+									<div class="col-sm-9">
+										<h3>Admin</h3>
+											<p>
+												Login or register for admin access.
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 features-box wow fadeInLeft">
+								<div class="row">
+									<div class="col-sm-3 features-box-icon">
+										<i class="fa fa-magnet"></i>
+									</div>
+									<div class="col-sm-9">
+										<h3>Public</h3>
+											<p>
+												Browse and comment on the media.
+											</p>
+									</div>
+								</div>
+							</div>
+					</div>
+
+					<div class="row">
+							<div class="col-sm-6 features-box wow fadeInLeft">
+								<div class="row">
+									<div class="col-sm-3 features-box-icon">
+										<i class="fa fa-archive"></i>
+									</div>
+									<div class="col-sm-9">
+										<h3>Archive</h3>
+											<p>
+												Browse all the media downloaded.
+											</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 features-box wow fadeInLeft">
+								<div class="row">
+									<div class="col-sm-3 features-box-icon">
+										<i class="fa fa-download"></i>
+									</div>
+									<div class="col-sm-9">
+										<h3>Download</h3>
+											<p>
+												Add and share media.
+											</p>
+									</div>
+								</div>
+							</div>
+					</div>
+
+			</div>
+		</div>
 
 <?php include_layout_template('footer.php'); ?>
