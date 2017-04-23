@@ -1,6 +1,5 @@
 <?php
-// If it's going to need the database, then it's
-// probably smart to require it before we start.
+// need the database before we start.
 require_once(LIB_PATH.DS.'database.php');
 
 class DatabaseObject {
@@ -26,7 +25,7 @@ protected static $table_name;
   }
 
 	private static function instantiate($record) {
-		// Could check that $record exists and is an array
+		// check that $record exists and is an array
     $class_name = get_called_class();
     $object = new $class_name;
 		// Simple, long-form approach:
@@ -35,7 +34,7 @@ protected static $table_name;
 		// $object->password 	= $record['password'];
 		// $object->first_name = $record['first_name'];
 		// $object->last_name 	= $record['last_name'];
-		// More dynamic, short-form approach:
+
 		foreach($record as $attribute=>$value){
 		  if($object->has_attribute($attribute)) {
 		    $object->$attribute = $value;
@@ -45,11 +44,11 @@ protected static $table_name;
 	}
 
 	private function has_attribute($attribute) {
-	  // get_object_vars returns an associative array with all attributes
-	  // (incl. private ones!) as the keys and their current values as the value
+	  // returns an associative array with all attributes
+	  //  current values as the value
 	  $object_vars = get_object_vars($this);
-	  // We don't care about the value, we just want to know if the key exists
-	  // Will return true or false
+	  // if the value exists
+	  //  return true or false
 	  return array_key_exists($attribute, $object_vars);
 	}
 

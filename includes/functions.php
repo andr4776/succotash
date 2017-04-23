@@ -23,7 +23,7 @@ function output_message($message="") {
   }
 }
 
-// Safety net
+
 function __autoload($class_name) {
 	$class_name = strtolower($class_name);
   $path = LIB_PATH.DS."{$class_name}.php";
@@ -35,11 +35,11 @@ function __autoload($class_name) {
 }
 
 function include_layout_template($template="") {
-	include(SITE_ROOT.DS.'public'.DS.'layouts'.DS.$template);
+	include(LAY_PATH.DS.'public'.DS.'layouts'.DS.$template);
 }
 
 function log_action($action, $message="") {
-	$logfile = SITE_ROOT.DS.'logs'.DS.'log.txt';
+	$logfile = LOG_PATH.DS.DS.'log.txt';
 	$new = file_exists($logfile) ? false : true;
   if($handle = fopen($logfile, 'a')) { // append
     $timestamp = strftime("%Y-%m-%d %H:%M:%S", time());

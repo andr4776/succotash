@@ -8,9 +8,13 @@
 defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
 
 defined('SITE_ROOT') ? null :
-	define('SITE_ROOT', DS.'xampp'.DS.'htdocs'.DS.'workspace_succotash');
+	define('SITE_ROOT', DS.'xampp'.DS.'htdocs'.DS.'photo_studio');
 
-defined('LIB_PATH') ? null : define('LIB_PATH', SITE_ROOT.DS.'includes');
+defined('LIB_PATH') ? null : define('LIB_PATH', SITE_ROOT.DS.'photoS'.DS.'includes');
+
+defined('LOG_PATH') ? null : define('LOG_PATH', SITE_ROOT.DS.'photoS'.DS.'logs');
+
+defined('LAY_PATH') ? null : define('LAY_PATH', SITE_ROOT.DS.'photoS');
 
 // load config file first
 require_once(LIB_PATH.DS.'config.php');
@@ -22,8 +26,15 @@ require_once(LIB_PATH.DS.'functions.php');
 require_once(LIB_PATH.DS.'session.php');
 require_once(LIB_PATH.DS.'database.php');
 require_once(LIB_PATH.DS.'database_object.php');
+require_once(LIB_PATH.DS.'pagination.php');
+require_once(LIB_PATH.DS.'phpMailer'.DS.'class.phpmailer.php');
+require_once(LIB_PATH.DS."phpMailer".DS."class.smtp.php");
+//require_once(LIB_PATH.DS."phpMailer".DS."language".DS."phpmailer.lang-en.php");
 
 // load database-related classes
 require_once(LIB_PATH.DS.'user.php');
+require_once(LIB_PATH.DS.'photograph.php');
+require_once(LIB_PATH.DS.'comment.php');
+
 
 ?>
