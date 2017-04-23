@@ -8,13 +8,13 @@
 defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
 
 defined('SITE_ROOT') ? null :
-	define('SITE_ROOT', DS.'xampp'.DS.'htdocs'.DS.'photo_studio');
+	define('SITE_ROOT', DS.'xampp'.DS.'htdocs'.DS.'workspace_succotash');
 
-defined('LIB_PATH') ? null : define('LIB_PATH', SITE_ROOT.DS.'photoS'.DS.'includes');
+defined('LIB_PATH') ? null : define('LIB_PATH', SITE_ROOT.DS.'includes');
 
-defined('LOG_PATH') ? null : define('LOG_PATH', SITE_ROOT.DS.'photoS'.DS.'logs');
+defined('LOG_PATH') ? null : define('LOG_PATH', SITE_ROOT.DS.'logs');
 
-defined('LAY_PATH') ? null : define('LAY_PATH', SITE_ROOT.DS.'photoS');
+defined('LAY_PATH') ? null : define('LAY_PATH', SITE_ROOT.DS.'public');
 
 // load config file first
 require_once(LIB_PATH.DS.'config.php');

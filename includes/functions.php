@@ -35,7 +35,7 @@ function __autoload($class_name) {
 }
 
 function include_layout_template($template="") {
-	include(LAY_PATH.DS.'public'.DS.'layouts'.DS.$template);
+	include(LAY_PATH.DS.'layouts'.DS.$template);
 }
 
 function log_action($action, $message="") {
