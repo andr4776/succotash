@@ -14,7 +14,7 @@ defined('LIB_PATH') ? null : define('LIB_PATH', SITE_ROOT.DS.'includes');
 
 defined('LOG_PATH') ? null : define('LOG_PATH', SITE_ROOT.DS.'logs');
 
-defined('LAY_PATH') ? null : define('LAY_PATH', SITE_ROOT.DS.'public'.DS.'layouts');
+defined('LAY_PATH') ? null : define('LAY_PATH', SITE_ROOT.DS.'public');
 
 defined('ADM_PATH') ? null : define('ADM_PATH', SITE_ROOT.DS.'public'.DS.'admin');
 

@@ -36,8 +36,8 @@ CREATE TABLE `photographs` (
 --
 -- Dumping data for table `photographs`
 --
-INSERT INTO `photographs` VALUES (1,'kir_001.jpg','image/jpg',265437,'kir-001'),(5,'kir_002.JPG','image/jpg',394552,'kir_002'),(4,'kir_003.jpg','image/jpg',322870,'kir_003'),(6,'kir_004.jpg','image/jpg',261152,'kir_004'),(7,'kir_005.jpg','image/jpg',369592,'kir_005'),(8,'kir_006.jpg','image/jpeg',353050,'kir_006');
-                                                                                                                                                                                                                                                                                                                                          
+INSERT INTO `photographs` VALUES (1,'bamboo.jpg','image/jpeg',265437,'Bamboo'),(5,'flowers.jpg','image/jpeg',394552,'Flowers'),(4,'roof.jpg','image/jpeg',322870,'Roof'),(6,'buddhas.jpg','image/jpeg',261152,'Buddhas'),(7,'wall.jpg','image/jpeg',369592,'Wall'),(8,'wood.jpg','image/jpeg',353050,'Wood');
+
 --
 -- Table structure for table `users`
 --
