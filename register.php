@@ -64,6 +64,12 @@
 
             <div class="inner-bg">
 
+
+
+
+
+
+
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2 text">
                             <h1>New edge<strong></strong> for the hedge</h1>
@@ -126,6 +132,9 @@
                         </div>
                     </div>
 
+
+
+
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3 social-login">
                         	<h3>...or login with:</h3>
@@ -143,6 +152,13 @@
                         </div>
                     </div>
 
+
+
+
+
+
+
+
             </div>
 
         </div>
@@ -154,9 +170,7 @@
         <script src="assets/js/jquery.backstretch.min.js"></script>
         <script src="assets/js/scripts.js"></script>
 
-        <!--[if lt IE 10]>
-            <script src="assets/js/placeholder.js"></script>
-        <![endif]-->
+
 
     </body>
 

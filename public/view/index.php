@@ -1,4 +1,4 @@
-<?php require_once("../includes/initialize.php"); ?>
+<?php require_once("../../includes/initialize.php"); ?>
 <?php
 
 	// 1. the current page number ($current_page)
@@ -22,7 +22,7 @@
 
 ?>
 <?php include_layout_template('header.php'); ?>
-
+<!-- Top content -->
 <!-- Top content -->
 		<div class="top-content">
 				<div class="container">
