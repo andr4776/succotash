@@ -39,7 +39,7 @@ function include_layout_template($template="") {
 }
 
 function log_action($action, $message="") {
-	$logfile = LOG_PATH.DS.DS.'log.txt';
+	$logfile = LOG_PATH.DS.'logs'.DS.'log.txt';
 	$new = file_exists($logfile) ? false : true;
   if($handle = fopen($logfile, 'a')) { // append
     $timestamp = strftime("%Y-%m-%d %H:%M:%S", time());
