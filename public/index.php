@@ -43,7 +43,7 @@
 		<li><a href="admin/photo_upload.php">Photo upload</a></li>
 		<li><a href="admin/logout.php">Logout</a></li>
 </ul>
-<?php include_layout_template('header.php'); ?>
+
 
 <?php foreach($photos as $photo): ?>
   <div style="float: left; margin-left: 20px;">
@@ -86,15 +86,6 @@
 </div>
 
 
-<?php include_layout_template('footer.php'); ?>
-ge
-	$sql = "SELECT * FROM photographs ";
-	$sql .= "LIMIT {$per_page} ";
-	$sql .= "OFFSET {$pagination->offset()}";
-	$photos = Photograph::find_by_sql($sql);
-
-
-?>
 <?php include_layout_template('header.php'); ?>
 <ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
 	<li><a href="index.php" class="active">Home</a></li>
@@ -140,7 +131,7 @@ ge
 							<div class="col-sm-6 features-box wow fadeInLeft">
 								<div class="row">
 									<div class="col-sm-3 features-box-icon">
-										<i class="fa fa-eye"></i>
+										<a href="admin/login.php"<i class="fa fa-eye"></i></a>
 									</div>
 									<div class="col-sm-9">
 										<h3>Admin</h3>
@@ -152,7 +143,7 @@ ge
 							<div class="col-sm-6 features-box wow fadeInLeft">
 								<div class="row">
 									<div class="col-sm-3 features-box-icon">
-										<i class="fa fa-download"></i>
+										<a href ="admin/photo_upload.php"<i class="fa fa-download"></i></a>
 									</div>
 									<div class="col-sm-9">
 										<h3>Download</h3>
@@ -168,7 +159,7 @@ ge
 							<div class="col-sm-6 features-box wow fadeInLeft">
 								<div class="row">
 									<div class="col-sm-3 features-box-icon">
-										<i class="fa fa-magnet"></i>
+										<a href="photo.php"	<i class="fa fa-magnet"></i></a>
 									</div>
 									<div class="col-sm-9">
 										<h3>Public</h3>
@@ -181,7 +172,7 @@ ge
 							<div class="col-sm-6 features-box wow fadeInLeft">
 								<div class="row">
 									<div class="col-sm-3 features-box-icon">
-										<i class="fa fa-archive"></i>
+										<a href="admin/list_photos.php"<i class="fa fa-archive"></i></a>
 									</div>
 									<div class="col-sm-9">
 										<h3>Archive</h3>
