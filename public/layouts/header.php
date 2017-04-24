@@ -35,7 +35,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html">Succotash home </a>
+					<a class="navbar-brand" href="../index.php">Succotash home </a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="top-navbar-1">
@@ -47,14 +47,18 @@
 							<input type="text" name="search" placeholder="Search..." class="search form-control">
 						</div>
 					</form>
-					<ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
-						<li><a href="Index.php" class="active">Home</a></li>
-						<li><a href="Login.php">Login</a></li>
-						<li><a href="Profile.php">MyProfile</a></li>
-						<li><a href="VBlog.php">VBlog</a></li>
-						<li><a href="Intouch.php">InTouch</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-        <!-- Top content -->
+
+<!--
+
+          <ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
+          	<li><a href="index.php" class="active">Home</a></li>
+          	<li><a href="admin/login.php">Login</a></li>
+          	<li><a href="photo.php">Public</a></li>
+          	<li><a href="comment.php">InTouch</a></li>
+
+          </ul>
+          </div>
+          </div>
+          </nav>
+
+-->

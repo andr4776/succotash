@@ -29,6 +29,20 @@ if (isset($_POST['submit'])) { // Form has been submitted.
 }
  ?>
  <?php include_layout_template('header_admin.php'); ?>
+ <ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
+   <li><a href="../index.php">Home</a></li>
+   <li><a href="index.php" class="active">Loging in</a></li>
+   
+
+ </ul>
+ </div>
+ </div>
+ </nav>
+
+ <div class="top-content">
+
+ <div class="inner-bg">
+
  <div class="row">
      <div class="col-sm-8 col-sm-offset-2 text">
          <h1>Succotash<strong>Lenta</strong> Studio37</h1>
@@ -79,4 +93,4 @@ if (isset($_POST['submit'])) { // Form has been submitted.
      </div>
      </div>
  </div>
-<?php include_layout_template('footer.php'); ?>
+<?php include_layout_template('footer_admin.php'); ?>

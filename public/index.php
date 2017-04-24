@@ -22,6 +22,16 @@
 
 ?>
 <?php include_layout_template('header.php'); ?>
+<ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
+	<li><a href="index.php" class="active">Home</a></li>
+	<li><a href="admin/login.php">Login</a></li>
+	<li><a href="photo.php">Public</a></li>
+	<li><a href="comment.php">InTouch</a></li>
+
+</ul>
+</div>
+</div>
+</nav>
 
 <!-- Top content -->
 		<div class="top-content">
@@ -61,36 +71,7 @@
 									<div class="col-sm-9">
 										<h3>Admin</h3>
 											<p>
-												Login or register for admin access.
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-6 features-box wow fadeInLeft">
-								<div class="row">
-									<div class="col-sm-3 features-box-icon">
-										<i class="fa fa-magnet"></i>
-									</div>
-									<div class="col-sm-9">
-										<h3>Public</h3>
-											<p>
-												Browse and comment on the media.
-											</p>
-									</div>
-								</div>
-							</div>
-					</div>
-
-					<div class="row">
-							<div class="col-sm-6 features-box wow fadeInLeft">
-								<div class="row">
-									<div class="col-sm-3 features-box-icon">
-										<i class="fa fa-archive"></i>
-									</div>
-									<div class="col-sm-9">
-										<h3>Archive</h3>
-											<p>
-												Browse all the media downloaded.
-											</p>
+												Login or register for admin access.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 									</div>
 								</div>
 							</div>
@@ -102,7 +83,36 @@
 									<div class="col-sm-9">
 										<h3>Download</h3>
 											<p>
-												Add and share media.
+												Add and share.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+											</p>
+									</div>
+								</div>
+							</div>
+					</div>
+
+					<div class="row">
+							<div class="col-sm-6 features-box wow fadeInLeft">
+								<div class="row">
+									<div class="col-sm-3 features-box-icon">
+										<i class="fa fa-magnet"></i>
+									</div>
+									<div class="col-sm-9">
+										<h3>Public</h3>
+											<p>
+												Comment on the media.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+											</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 features-box wow fadeInLeft">
+								<div class="row">
+									<div class="col-sm-3 features-box-icon">
+										<i class="fa fa-archive"></i>
+									</div>
+									<div class="col-sm-9">
+										<h3>Archive</h3>
+											<p>
+												Browse all the media downloaded.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 											</p>
 									</div>
 								</div>

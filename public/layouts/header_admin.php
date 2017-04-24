@@ -32,7 +32,7 @@
   						<span class="icon-bar"></span>
   						<span class="icon-bar"></span>
   					</button>
-  					<a class="navbar-brand" href=""></a>
+  					<a class="navbar-brand" href="../index.php"></a>
   				</div>
   				<!-- Collect the nav links, forms, and other content for toggling -->
   				<div class="collapse navbar-collapse" id="top-navbar-1">
@@ -44,16 +44,20 @@
   							<input type="text" name="search" placeholder="Search..." class="search form-control">
   						</div>
   					</form>
-  					<ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
 
-  						<li><a href="login.php" class="active">Login</a></li>
-  						<li><a href="profile.php">Register</a></li>
-  						<li><a href="intouch.php">About</a></li>
+
+            <!--
+  					<ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
+              <li><a href="../index.php">Home</a></li>
+  						<li><a href="admin/login.php" class="active">Login</a></li>
+  						<li><a href="register.php">Register</a></li>
+  						<li><a href="intouch.php">InTouch</a></li>
   					</ul>
   				</div>
   			</div>
   		</nav>
-        <!-- Top content -->
+
         <div class="top-content">
 
             <div class="inner-bg">
+          -->
