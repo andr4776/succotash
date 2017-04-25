@@ -38,11 +38,7 @@
 	// maintain the current page (or store $page in $session)
 
 ?>
-<ul>
-		<li><a href="admin/list_photos.php">List Photos</a></li>
-		<li><a href="admin/photo_upload.php">Photo upload</a></li>
-		<li><a href="admin/logout.php">Logout</a></li>
-</ul>
+
 
 
 <?php foreach($photos as $photo): ?>
@@ -87,18 +83,13 @@
 
 
 <?php include_layout_template('header.php'); ?>
-<ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
-	<li><a href="index.php" class="active">Home</a></li>
-	<li><a href="admin/login.php">Login</a></li>
-	<li><a href="photo.php">Public</a></li>
-	<li><a href="comment.php">InTouch</a></li>
 
-</ul>
 </div>
 </div>
 </nav>
 
 <!-- Top content -->
+
 		<div class="top-content">
 				<div class="container">
 
