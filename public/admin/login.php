@@ -31,8 +31,8 @@ if (isset($_POST['submit'])) { // Form has been submitted.
  <?php include_layout_template('header_admin.php'); ?>
  <ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
    <li><a href="../index.php">Home</a></li>
-   <li><a href="index.php" class="active">Loging in</a></li>
-   
+   <li><a href="" class="active">Register</a></li>
+
 
  </ul>
  </div>
@@ -67,17 +67,17 @@ if (isset($_POST['submit'])) { // Form has been submitted.
          </div>
          </div>
          <div class="form-bottom">
-       <form role="form" name="form1" action="login.php" method="post" class="login-form" onsubmit="required()">
+       <form role="form" name="form1" action="login.php" method="post" class="login-form" >
 
           <div class="form-group">
           <label class="sr-only" for="form-userName"></label>
-            <input type="text" name="formUserName" placeholder="User Name" class="form-userName form-control"  id="form-userName" required="" maxlength="30" value="<?php echo htmlentities($username); ?>">
+            <input type="text" name="formUserName" placeholder="User Name" class="form-userName form-control"  maxlength="30" value="<?php echo htmlentities($username); ?>">
           </div>
 
           <p> </p>
            <div class="form-group">
              <label class="sr-only" for="form-password">Password</label>
-             <input type="password" name="form-password" placeholder="Password ..." class="form-password form-control" id="form-password" maxlength="30" value="<?php echo htmlentities($password); ?>">
+             <input type="password" name="form-password" placeholder="Password ..." class="form-password form-control"  maxlength="30" value="<?php echo htmlentities($password); ?>">
            </div>
            <div class = "form-group">
              <div class = "col-sm-6 col-sm-offset-3 form-box">
@@ -88,7 +88,7 @@ if (isset($_POST['submit'])) { // Form has been submitted.
            </div>
 
            <br>
-           <button type="submit" class="btn btn-block btn-success"  onsubmit=" " name="submit" value="Login">Login </button>
+           <button type="submit" class="btn btn-block btn-success"  onsubmit="index.php " name="submit" value="Login">Login </button>
        </form>
      </div>
      </div>

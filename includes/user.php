@@ -13,7 +13,7 @@ class User extends DatabaseObject {
 	public $password;
 	public $first_name;
 	public $last_name;
-    public $email;
+  public $email;
 
   public function full_name() {
     if(isset($this->first_name) && isset($this->last_name)) {
