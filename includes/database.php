@@ -44,8 +44,8 @@ public function escape_value($string) {
 }
 
 	// "database-neutral" methods
-  public function fetch_array($result_set) {
-    return mysql_fetch_array($result_set);
+  public function fetch_assoc($result_set) {
+    return mysqli_fetch_assoc($result_set);
   }
 
   public function num_rows($result_set) {

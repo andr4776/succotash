@@ -147,7 +147,7 @@ class Photograph extends DatabaseObject {
     global $database;
     $result_set = $database->query($sql);
     $object_array = array();
-    while ($row = $database->fetch_array($result_set)) {
+    while ($row = $database->fetch_assoc($result_set)) {
       $object_array[] = self::instantiate($row);
     }
     return $object_array;
@@ -157,7 +157,7 @@ class Photograph extends DatabaseObject {
 	  global $database;
 	  $sql = "SELECT COUNT(*) FROM ".self::$table_name;
     $result_set = $database->query($sql);
-	  $row = $database->fetch_array($result_set);
+	  $row = $database->fetch_assoc($result_set);
     return array_shift($row);
 	}
 
