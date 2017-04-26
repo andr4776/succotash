@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="assets/css/animate.css">
         <link rel="stylesheet" href= "assets/css/style.css">
 
+        <!-- custom css -->
+        <link rel="stylesheet" href= "stylesheets/main.css">
 
 
         <!-- Favicon and touch icons -->
@@ -35,9 +37,9 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="../index.php">Succotash home </a>
+					<a class="navbar-brand" href="index.php">Succotash home </a>
 				</div>
-			
+
 <!--
 
           <ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">

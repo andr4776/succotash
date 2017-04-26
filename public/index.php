@@ -77,9 +77,9 @@
 											<p class="medium-paragraph">
 												<div id="pagination" style="clear: both;">
 												<?php foreach($photos as $photo): ?>
-												
+
 														<a href="photo.php?id=<?php echo $photo->id; ?>">
-															<img src="<?php echo $photo->image_path(); ?>" width="200" />
+															<img  class="hover-shadow cursor"src="<?php echo $photo->image_path(); ?>" width="200" />
 														</a>
 														<!--<p><?php echo $photo->caption; ?></p>-->
 

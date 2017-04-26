@@ -33,7 +33,7 @@ if (isset($_POST['submit'])) { // Form has been submitted.
    <li><a href="../index.php">Home</a></li>
    <li><a href="" class="active">Register</a></li>
 
-<?php echo output_message($message); var_dump($_POST);?>
+<?php echo output_message($message);?>
 
 
  </ul>
@@ -65,7 +65,8 @@ if (isset($_POST['submit'])) { // Form has been submitted.
          </div>
          <div class="form-top-right">
            <i class="fa fa-lock"></i>
-           <br>
+           <br/>
+           <br/>
          </div>
          </div>
          <div class="form-bottom">

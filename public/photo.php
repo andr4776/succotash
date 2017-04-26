@@ -1,4 +1,30 @@
 <?php require_once("../includes/initialize.php"); ?>
+<?php include_layout_template('header.php'); ?>
+<div class="collapse navbar-collapse" id="top-navbar-1">
+	<ul class="nav navbar-nav navbar-right navbar-search-button">
+		<li><a class="search-button" href="#"><i class="fa fa-search"></i></a></li>
+	</ul>
+	<form class="navbar-form navbar-search-form disabled wow fadeInLeft" role="form" action="" method="post">
+		<div class="form-group">
+			<input type="text" name="search" placeholder="Search..." class="search form-control">
+		</div>
+	</form>
+	<ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
+		<li><a href="index.php">Home</a></li>
+		<li><a href="register.php" class="active">Register</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#" >VBlog</a></li>
+		<li><a href="#">InTouch</a></li>
+	</ul>
+</div>
+</div>
+</nav>
+
+<!-- Top content -->
+
+		<div class="top-content">
+				<div class="container">
+
 <?php
   if(empty($_GET['id'])) {
     $session->message("No photograph ID was provided.");
@@ -40,7 +66,7 @@
 	$comments = $photo->comments();
 
 ?>
-<?php include_layout_template('header.php'); ?>
+
 
 <a href="index.php">&laquo; Back</a><br />
 <br />
@@ -49,6 +75,7 @@
   <img src="<?php echo $photo->image_path(); ?>" />
   <p><?php echo $photo->caption; ?></p>
 </div>
+
 
 <div id="comments">
   <?php foreach($comments as $comment): ?>
@@ -63,9 +90,12 @@
 	      <?php echo datetime_to_text($comment->created); ?>
 	    </div>
     </div>
+
   <?php endforeach; ?>
   <?php if(empty($comments)) { echo "No Comments."; } ?>
 </div>
+
+
 
 <div id="comment-form">
   <h3>New Comment</h3>
@@ -88,4 +118,6 @@
   </form>
 </div>
 
+
+</div>
 <?php include_layout_template('footer.php'); ?>

@@ -14,8 +14,23 @@
   }
 ?>
 
-<?php include_layout_template('admin_header.php'); ?>
+<?php include_layout_template('header_admin.php'); ?>
+<ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
+   <li><a href="../index.php">Home</a></li>
+   <li><a href="logfile.php" class="active">Log File</a></li>
+    <li><a href="logout.php" >Logout</a></li>
 
+<?php echo output_message($message);?>
+
+
+ </ul>
+ </div>
+ </div>
+ </nav>
+
+ <div class="top-content">
+
+ <div class="inner-bg">
 <a href="index.php">&laquo; Back</a><br />
 <br />
 
@@ -26,7 +41,7 @@
 <?php
 
   if( file_exists($logfile) && is_readable($logfile) &&
-			$handle = fopen($logfile, 'w')) {  // read
+			$handle = fopen($logfile, 'r')) {  // read
     echo "<ul class=\"log-entries\">";
 		while(!feof($handle)) {
 			$entry = fgets($handle);
@@ -42,4 +57,4 @@
 
 ?>
 
-<?php include_layout_template('admin_footer.php'); ?>
+<?php include_layout_template('footer_admin.php'); ?>
