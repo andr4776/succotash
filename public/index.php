@@ -20,7 +20,7 @@
 	$page = !empty($_GET['page']) ? (int)$_GET['page'] : 1;
 
 	// 2. records per page ($per_page)
-	$per_page = 5;
+	$per_page = 3;
 
 	// 3. total record count ($total_count)
 	$total_count = Photograph::count_all();
@@ -68,14 +68,18 @@
 											</p>
 										</div>
 								</div>
+
+								</div>
+								<br/>
+								
 								<?php
 									if($pagination->total_pages() > 1) {
 
 										if($pagination->has_previous_page()) {
-								    	echo "<a href=\"index.php?page=";
-								      echo $pagination->previous_page();
-								      echo "\">&laquo; Previous</a> ";
-								    }
+											echo "<a href=\"index.php?page=";
+											echo $pagination->previous_page();
+											echo "\">&laquo; Previous</a> ";
+										}
 
 										for($i=1; $i <= $pagination->total_pages(); $i++) {
 											if($i == $page) {
@@ -89,12 +93,11 @@
 											echo " <a href=\"index.php?page=";
 											echo $pagination->next_page();
 											echo "\">Next &raquo;</a> ";
-								    }
+										}
 
 									}
 
 								?>
-								</div>
 						</div>
 
 				</div>
