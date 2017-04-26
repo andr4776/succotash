@@ -37,17 +37,7 @@
 					</button>
 					<a class="navbar-brand" href="../index.php">Succotash home </a>
 				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="top-navbar-1">
-					<ul class="nav navbar-nav navbar-right navbar-search-button">
-						<li><a class="search-button" href="index.php"><i class="fa fa-search"></i></a></li>
-					</ul>
-					<form class="navbar-form navbar-search-form disabled wow fadeInLeft" role="form" action="" method="post">
-						<div class="form-group">
-							<input type="text" name="search" placeholder="Search..." class="search form-control">
-						</div>
-					</form>
-
+			
 <!--
 
           <ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
