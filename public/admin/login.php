@@ -58,18 +58,23 @@ if (isset($_POST['submit'])) { // Form has been submitted.
      </div>
  </div>
  <div class="row">
+
+   <div class="col-sm-10 col-sm-offset-1 show-forms">
+                        <span class="show-register-form active">Register</span>
+                        <span class="show-forms-divider">/</span>
+                        <span class="show-login-form">Login</span>
+                      </div>
      <div class="col-sm-6 col-sm-offset-3 form-box">
-       <div class="form-top">
-         <div class="form-top-left">
+
+
            <h3>Admin assistant</h3>
-             <p>Login to proceed </p>
-         </div>
+
          <div class="form-top-right">
            <i class="fa fa-lock"></i>
            <br/>
            <br/>
          </div>
-         </div>
+
          <div class="form-bottom">
        <form action="login.php" method="post" class="login-form" >
 

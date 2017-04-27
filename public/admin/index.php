@@ -25,7 +25,7 @@ if (!$session->is_logged_in()) { redirect_to("login.php"); }
         <div class="description">
           <p>
 
-            <strong></strong></a>
+            <strong></strong>
           </p>
         </div>
     </div>
