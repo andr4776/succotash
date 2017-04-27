@@ -1,7 +1,7 @@
 <?php require_once("../../includes/initialize.php"); ?>
 <?php if (!$session->is_logged_in()) { redirect_to("login.php"); } ?>
 <?php
-
+    $index = 2;
   $logfile = SITE_ROOT.DS.'logs'.DS.'log.txt';
 
   if($_GET['clear'] == 'true') {

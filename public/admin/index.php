@@ -35,8 +35,11 @@ if (!$session->is_logged_in()) { redirect_to("login.php"); }
 	<?php echo output_message($message); ?>
 
   <div class="btn-group open">
+
+
     <a class="btn btn-block dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-user"></i> <h3>Access</h3></a>
-      <span class="icon-caret-down"></span></a>
+      <span class="icon-caret-down"></span>
+
 	<ul class="dropdown-menu">
 		<li><a href="list_photo.php"><i class ="icon-fixed-width icon-arhcive"</i>List Photos</a></li>
     <li><a href="logfile.php"><i class ="icon-fixed-width icon-book"</i>View Log files</a></li>

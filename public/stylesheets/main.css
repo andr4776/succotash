@@ -60,3 +60,8 @@ animation: fadein 0.5s, fadeout 0.5s 2.5s;
 @-webkit-keyframes fadeout{from{bottom:30; opacity: 1;} to {bottom: 0px; opacity: 0;}}
 @keyframes fadeut{from{bottom:30; opacity: 1;} to {bottom: 0px; opacity: 0;}}
 
+/*** contact chip****/
+.chip{display: inline-block;padding: 0 25px;height: 50px;font-size: 16px;line-height: 50px;border-radius:25px;background-color: #284d2d;}
+.chip img{float: left;margin 0 10px; 0 -25px;height: 50px;width: 50px;border-radius: 50%;}
+
+.dropdown-menu{background-color: darkslategrey;color:forestgreen;}
