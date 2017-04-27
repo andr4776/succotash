@@ -31,10 +31,11 @@ if (isset($_POST['submit'])) { // Form has been submitted.
  <?php include_layout_template('header_admin.php'); ?>
  <ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
    <li><a href="../index.php">Home</a></li>
-   <li><a href="" class="active">Register</a></li>
+   <li><a href="login.php" class="active">Login</a></li>
+    <li><a href="" >Register</a></li>
 
-<?php echo output_message($message);?>
-
+<!--<?php echo output_message($message);?>-->
+<div id="snackbar"><?php echo output_message($message);?></div>
 
  </ul>
  </div>
@@ -91,7 +92,7 @@ if (isset($_POST['submit'])) { // Form has been submitted.
            </div>
 
            <br>
-           <button type="submit" class="btn btn-block btn-success"  name="submit" value="Login">Login </button>
+           <button onclick="myToast()" type="submit" class="btn btn-block btn-success"  name="submit" value="Login">Login </button>
        </form>
      </div>
      </div>

@@ -17,7 +17,27 @@
       <!-- Top content -->
       <div class="top-content">
                      <h1>Succotash<strong>Lenta</strong> Studio37</h1>
-                    <br/>
+                     <div class="description">
+                         <a href ="index.php"><h4>Admin Assistant Area</h4></i></a>
+                     </div>
+<div class="col-sm-8 col-sm-offset-2 text">
+
+  <div class="col-sm-6 features-box wow fadeInLeft">
+    <p>
+      <h1>Photographs</h1>
+  								<div class="row">
+  									<div class="col-sm-3 features-box-icon">
+  										<a href ="photo_upload.php"><i class="fa fa-upload"></i></a>
+  									</div>
+  									<div class="col-sm-9">
+                      <a href ="photo_upload.php"><h2>Upload More</h2></a>
+
+
+  									</div>
+  								</div>
+  							</div>
+
+</div>
 <!--<div class="col-sm-8 col-sm-offset-2 text">-->
 
 <?php echo output_message($message); ?>
@@ -50,27 +70,6 @@
 <?php endforeach; ?>
 </table>
 
-<div class="description">
-    <a href ="index.php"><h4>Admin Assistant Menu</h4></i></a>
-</div>
-<div class="col-sm-8 col-sm-offset-2 text">
-
-<div class="col-sm-6 features-box wow fadeInLeft">
-<p>
-<h1>Photographs</h1>
-<div class="row">
-<div class="col-sm-3 features-box-icon">
- <a href ="photo_upload.php"><i class="fa fa-upload"></i></a>
-</div>
-<div class="col-sm-9">
- <a href ="photo_upload.php"><h2>Upload More</h2></a>
-
-
-</div>
-</div>
-</div>
-
-</div>
 </div>
 
 <?php include_layout_template('footer_admin.php'); ?>

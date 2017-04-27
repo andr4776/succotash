@@ -37,7 +37,7 @@ img{margin-bottom: -4px;}
 .demo:hover{opacity: 1;}
 img.hover-shadow{transition: 0.3s}
 
-.hover-shadow:hover{box-shadow:0 34px 28px 2px rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19) }
+.hover-shadow:hover{box-shadow:26px 34px 28px 2px rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19) }
 
 #myTable{border-collapse: collapse;width: 80%;border: 1px solid #128682;font-size: 18px;margin-left: 10%;margin-right: 10%;}
 #myTable th,#myTable td {text-align: center;padding: 12px;}
@@ -59,3 +59,4 @@ animation: fadein 0.5s, fadeout 0.5s 2.5s;
 @keyframes fadein{from{bottom:0; opacity: 0;} to {bottom: 30px; opacity: 1;}}
 @-webkit-keyframes fadeout{from{bottom:30; opacity: 1;} to {bottom: 0px; opacity: 0;}}
 @keyframes fadeut{from{bottom:30; opacity: 1;} to {bottom: 0px; opacity: 0;}}
+

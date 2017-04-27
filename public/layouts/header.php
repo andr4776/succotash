@@ -40,6 +40,15 @@
 					<a class="navbar-brand" href="index.php">Succotash home </a>
 				</div>
 
+        <div class="collapse navbar-collapse" id="top-navbar-1">
+          <ul class="nav navbar-nav navbar-right navbar-search-button">
+            <li><a class="search-button" href=""><i class="fa fa-search"></i></a></li>
+          </ul>
+          <form class="navbar-form navbar-search-form disabled wow fadeInLeft" role="form" action="" method="post">
+            <div class="form-group">
+              <input type="text"id="myInput" onkeyup="myFunction()"name="search" placeholder="Search Caption..." class="search form-control">
+            </div>
+          </form>
 <!--
 
           <ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">

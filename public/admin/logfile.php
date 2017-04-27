@@ -2,7 +2,7 @@
 <?php if (!$session->is_logged_in()) { redirect_to("login.php"); } ?>
 <?php
 
-  $logfile = LOG_PATH.DS.'log.txt';
+  $logfile = SITE_ROOT.DS.'logs'.DS.'log.txt';
 
   if($_GET['clear'] == 'true') {
 		file_put_contents($logfile, '');
@@ -20,7 +20,7 @@
    <li><a href="logfile.php" class="active">Log File</a></li>
     <li><a href="logout.php" >Logout</a></li>
 
-<?php echo output_message($message);?>
+
 
 
  </ul>
@@ -30,7 +30,7 @@
 
  <div class="top-content">
 
- <div class="inner-bg">
+
 <a href="index.php">&laquo; Back</a><br />
 <br />
 
@@ -41,7 +41,7 @@
 <?php
 
   if( file_exists($logfile) && is_readable($logfile) &&
-			$handle = fopen($logfile, 'r')) {  // read
+			$handle = fopen($logfile, 'w')) {  // read
     echo "<ul class=\"log-entries\">";
 		while(!feof($handle)) {
 			$entry = fgets($handle);

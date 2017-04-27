@@ -41,7 +41,7 @@
   					</ul>
   					<form class="navbar-form navbar-search-form disabled wow fadeInLeft" role="form" action="" method="post">
   						<div class="form-group">
-  							<input type="text" name="search" placeholder="Search..." class="search form-control">
+  							<input type="text"id="myInput" onkeyup="myFunction()"name="search" placeholder="Search Caption..." class="search form-control">
   						</div>
   					</form>
 

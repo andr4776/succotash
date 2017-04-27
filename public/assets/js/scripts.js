@@ -155,7 +155,7 @@ function EmptyValidation(formEmail)
     captionText.innerHTML = dots[slideIndex-1].alt;
   }
 
-  function myTable() {
+  function myFunction() {
     // Declare variables
     var input, filter, table, tr, td, i;
     input = document.getElementById("myInput");

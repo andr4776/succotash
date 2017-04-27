@@ -43,20 +43,10 @@
 
 <?php include_layout_template('header.php'); ?>
 
-
-
-<div class="collapse navbar-collapse" id="top-navbar-1">
-	<ul class="nav navbar-nav navbar-right navbar-search-button">
-		<li><a class="search-button" href="index.php"><i class="fa fa-search"></i></a></li>
-	</ul>
-	<form class="navbar-form navbar-search-form disabled wow fadeInLeft" role="form" action="" method="post">
-		<div class="form-group">
-			<input type="text" name="search" placeholder="Search..." class="search form-control">
-		</div>
-	</form>
 	<ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
-		<li><a href="index.php">Home</a></li>
-		<li><a href="register.php" class="active">Register</a></li>
+		<li><a href="index.php"class="active">Home</a></li>
+		<li><a href="register.php" >Register</a></li>
+		<li><a href="admin/login.php" >Login</a></li>
 		<li><a href="#">About</a></li>
 		<li><a href="#" >VBlog</a></li>
 		<li><a href="#">InTouch</a></li>
@@ -77,12 +67,12 @@
 											<p class="medium-paragraph">
 												<div id="pagination" style="clear: both;">
 												<?php foreach($photos as $photo): ?>
-													<div class="column"
+
 														<a href="photo.php?id=<?php echo $photo->id; ?>">
 															<img  class="hover-shadow cursor"src="<?php echo $photo->image_path(); ?>" width="200" />
 														</a>
 														<!--<p><?php echo $photo->caption; ?></p>-->
-													</div>
+
 												<?php endforeach; ?>
 											</p>
 										</div>
@@ -90,7 +80,7 @@
 								</div>
 
 								</div>
-						
+
 								<br/>
 <h1>Photographs</h1>
 								<?php
@@ -180,12 +170,12 @@
 							<div class="col-sm-6 features-box wow fadeInLeft">
 								<div class="row">
 									<div class="col-sm-3 features-box-icon">
-										<a href="admin/list_photos.php"<i class="fa fa-archive"></i></a>
+										<a href="admin/list_photo.php"<i class="fa fa-archive"></i></a>
 									</div>
 									<div class="col-sm-9">
 										<h3>Archive</h3>
 											<p>
-												Browse all the media downloaded.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+												 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 											</p>
 									</div>
 								</div>
