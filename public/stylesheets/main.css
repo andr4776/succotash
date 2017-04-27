@@ -37,9 +37,9 @@ img{margin-bottom: -4px;}
 .demo:hover{opacity: 1;}
 img.hover-shadow{transition: 0.3s}
 
-.hover-shadow:hover{box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) }
+.hover-shadow:hover{box-shadow:0 34px 28px 2px rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19) }
 
-#myTable{border-collapse: collapse;width: 100%;border: 1px solid #128682;font-size: 18px;}
+#myTable{border-collapse: collapse;width: 80%;border: 1px solid #128682;font-size: 18px;margin-left: 10%;margin-right: 10%;}
 #myTable th,#myTable td {text-align: center;padding: 12px;}
 
 #myTable tr{border-bottom: 1px solid #128682;}
@@ -49,3 +49,13 @@ img.hover-shadow{transition: 0.3s}
 .chip{display:inline-block;padding: 0 25px;height: 50px;font-size: 50px; border-radius: 25px;background-color: darkslategrey;}
 /****** style buttons  *****/
 .buttonload{background-color:#128682;border: none;color:#08c877;padding: 12px 16px;font-size: 16px;}
+/**** toast message *****/
+#snackbar{visibility: hidden;min-width: 250px;margin-left: -125px; /**divide value of min-width by 2**/ background-color: ##31837e; color: ##a2723f;text-align: center;border-radius: 2px;padding: 16px;position: fixed;/**on top of the sreen**/z-index: 1;right: 50%;bottom: 40px;}
+#snackbar.show{visibility: visible;}
+-webkit -animation: fadein 0.5s, fadeout 0.5s 2.5s;
+animation: fadein 0.5s, fadeout 0.5s 2.5s;
+
+@-webkit-keyframes fadein{from{bottom:0; opacity: 0;} to {bottom: 30px; opacity: 1;}}
+@keyframes fadein{from{bottom:0; opacity: 0;} to {bottom: 30px; opacity: 1;}}
+@-webkit-keyframes fadeout{from{bottom:30; opacity: 1;} to {bottom: 0px; opacity: 0;}}
+@keyframes fadeut{from{bottom:30; opacity: 1;} to {bottom: 0px; opacity: 0;}}

@@ -77,12 +77,12 @@
 											<p class="medium-paragraph">
 												<div id="pagination" style="clear: both;">
 												<?php foreach($photos as $photo): ?>
-
+													<div class="column"
 														<a href="photo.php?id=<?php echo $photo->id; ?>">
 															<img  class="hover-shadow cursor"src="<?php echo $photo->image_path(); ?>" width="200" />
 														</a>
 														<!--<p><?php echo $photo->caption; ?></p>-->
-
+													</div>
 												<?php endforeach; ?>
 											</p>
 										</div>
@@ -90,8 +90,9 @@
 								</div>
 
 								</div>
+						
 								<br/>
-
+<h1>Photographs</h1>
 								<?php
 									if($pagination->total_pages() > 1) {
 
@@ -150,10 +151,10 @@
 							<div class="col-sm-6 features-box wow fadeInLeft">
 								<div class="row">
 									<div class="col-sm-3 features-box-icon">
-										<a href ="admin/photo_upload.php"<i class="fa fa-download"></i></a>
+										<a href ="admin/photo_upload.php"<i class="fa fa-upload"></i></a>
 									</div>
 									<div class="col-sm-9">
-										<h3>Download</h3>
+										<h3>Upload</h3>
 											<p>
 												Add and share.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 											</p>
@@ -166,7 +167,7 @@
 							<div class="col-sm-6 features-box wow fadeInLeft">
 								<div class="row">
 									<div class="col-sm-3 features-box-icon">
-										<a href="photo.php"	<i class="fa fa-magnet"></i></a>
+										<a href="<?php "photo.php?id={$photo->id}";  ?>"<i class="fa fa-magnet"></i></a>
 									</div>
 									<div class="col-sm-9">
 										<h3>Public</h3>

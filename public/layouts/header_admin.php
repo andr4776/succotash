@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="../assets/css/style.css">
 
         <!-- custom styles for the form -->
-          <link rel="stylesheet" href= "stylesheets/main.css">
+          <link rel="stylesheet" href= "../stylesheets/main.css">
 
         <!-- Favicon and touch icons -->
         <link rel="shortcut icon" href="../assets/ico/logo.png">

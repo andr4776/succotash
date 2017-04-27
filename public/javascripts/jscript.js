@@ -34,8 +34,8 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-<script>
-function myFunction() {
+
+function myTable() {
   // Declare variables
   var input, filter, table, tr, td, i;
   input = document.getElementById("myInput");
@@ -55,4 +55,12 @@ function myFunction() {
     }
   }
 }
-</script>
+
+function myToast(){
+  // getting snack bar divider
+  var x= document.getElementById("snackbar")
+  // adding show class to div
+  x.className ="show";
+  // after 4 seconds, remove the show cladd from div
+setTimeout(function(){x.className = x.className.replace("show","");},4000);
+}

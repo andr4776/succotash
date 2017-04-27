@@ -8,7 +8,7 @@
 
 <ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
             <li><a href="../index.php">Home</a></li>
-            <li><a href="list_photo.php" class="active">Logined in</a></li>
+            <li><a href="list_photo.php" class="active">Logged in</a></li>
             <li><a href="logout.php">Logout</a></li>
 
 
@@ -19,24 +19,45 @@
       <!-- Top content -->
       <div class="top-content">
 
-          <div class="inner-bg">
+                     <h1>Succotash<strong>Lenta</strong> Studio37</h1>
+                     <div class="description">
+                       <p>
+                         Photographs' List
+                       </p>
+                     </div>
+
+<div class="col-sm-8 col-sm-offset-2 text">
+
+  <div class="col-sm-6 features-box wow fadeInLeft">
+    <p>
+      <h1>Photographs</h1>
+    </p>
+  								<div class="row">
+  									<div class="col-sm-3 features-box-icon">
+  										<a href ="photo_upload.php"><i class="fa fa-upload"></i></a>
+  									</div>
+  									<div class="col-sm-9">
+
+                      <a href ="photo_upload.php"><h2>Upload More</h2></a>
 
 
+  									</div>
+  								</div>
+  							</div>
 
+</div>
+<!--<div class="col-sm-8 col-sm-offset-2 text">-->
 
-
-
-<h2>Succotash Lenta </h2>
-<a href="photo_upload.php">Upload a new photograph</a>
 <?php echo output_message($message); ?>
-<table class="bordered">
-  <tr>
-    <th>Image</th>
-    <th>Filename</th>
-    <th>Caption</th>
-    <th>Size</th>
-    <th>Type</th>
-		<th>Comments</th>
+
+<table  id ="myTable" class="bordered">
+  <tr class="header">
+    <th style="20%">Image</th>
+    <th style="20%">Filename</th>
+    <th style="20%">Caption</th>
+    <th style="20%">Size</th>
+    <th style="20%">Type</th>
+		<th style="20%">Comments</th>
 		<th>&nbsp;</th>
   </tr>
 <?php foreach($photos as $photo): ?>
@@ -51,14 +72,11 @@
 				<?php echo count($photo->comments()); ?>
 			</a>
 		</td>
-		<td><a href="delete_photo.php?id=<?php echo $photo->id; ?>">Delete</a></td>
+		<td><a href="delete_photo.php?id=<?php echo $photo->id; ?>">Delete.. <i class="fa fa-eraser"></a></td>
   </tr>
+
 <?php endforeach; ?>
 </table>
-<br />
-
-
-</div>
 </div>
 
 <?php include_layout_template('footer_admin.php'); ?>
