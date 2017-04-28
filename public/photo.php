@@ -1,18 +1,11 @@
 <?php require_once("../includes/initialize.php"); ?>
 <?php include_layout_template('header.php'); ?>
-<div class="collapse navbar-collapse" id="top-navbar-1">
-	<ul class="nav navbar-nav navbar-right navbar-search-button">
-		<li><a class="search-button" href="#"><i class="fa fa-search"></i></a></li>
-	</ul>
-	<form class="navbar-form navbar-search-form disabled wow fadeInLeft" role="form" action="" method="post">
-		<div class="form-group">
-			<input type="text" name="search" placeholder="Search..." class="search form-control">
-		</div>
-	</form>
+
 	<ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
-		<li><a href="index.php">Gallery Photo</a></li>
-		<li><a href="admin/comments.php" class="active">Photograph</a></li>
+		<li><a href="index.php"> Gallery</a></li>
 		<li><a href="#">About</a></li>
+		<li><a href="photo.php?id=4" class ="active"> Public</a></li>
+		<li><a href="admin/login.php" > Admin</a></li>
 		<li><a href="#" >VBlog</a></li>
 		<li><a href="#">InTouch</a></li>
 	</ul>
@@ -22,9 +15,7 @@
 
 <!-- Top content -->
 
-		<div class="top-content">
-				<div class="container">
-
+<div class="top-content">
 <?php
   if(empty($_GET['id'])) {
     $session->message("No photograph ID was provided.");
@@ -62,12 +53,8 @@
 		$author = "";
 		$body = "";
 	}
-
 	$comments = $photo->comments();
-
 ?>
-
-
 <a href="index.php">&laquo; Back</a><br />
 <br />
 
@@ -94,12 +81,17 @@
   <?php endforeach; ?>
   <?php if(empty($comments)) { echo "No Comments."; } ?>
 </div>
-
+<i class="mega-octicon octicon-sign-in"></i>
 
 
 <div id="comment-form">
   <h3>New Comment</h3>
+	<!-- Trigger/Open The Modal -->
+
+
+</div>
   <?php echo output_message($message); ?>
+	
   <form action="photo.php?id=<?php echo $photo->id; ?>" method="post">
     <table>
       <tr>
@@ -120,4 +112,6 @@
 
 
 </div>
+
+
 <?php include_layout_template('footer.php'); ?>

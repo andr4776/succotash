@@ -4,11 +4,13 @@
 .row:after{content: "";display: table;clear: both;}
 .column{float: left;width:25%;}
 
-/*the modal(background)*/
+/*the modal(background) lightroom*/
 .modal{display: none;position: fixed;z-index: 1;padding-top: 100px;left: 0;top: 0;width: 100%;height: 100%; overflow: auto;background-color: darkslategray;}
-/**** modal content *****/
-.modal-content{position: relative;background-color: darkslategray;margin: auto;padding: 0;width: 90%;width: 90%;max-width: 1200px;}
-
+/**** modal content - lightroom *****/
+.modal-content{position: relative;background-color: darkslategray;margin: auto;padding: 0;width: 90%;width: 90%;max-width: 1200px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); }
+.modal-header {padding: 2px 16px;background-color: #2b848c;color: #c4a483;}
+.modal-body {padding: 2px 16px;}
+.modal-footer {padding: 2px 16px;background-color: #5cb8af;#c4a483;}
 /***** the close button *****/
 .close{color: cadetblue;position: absolute;top: 10px; right: 25;font-size: 36px;font-weight: bold;}
 
@@ -60,6 +62,8 @@ animation: fadein 0.5s, fadeout 0.5s 2.5s;
 @-webkit-keyframes fadeout{from{bottom:30; opacity: 1;} to {bottom: 0px; opacity: 0;}}
 @keyframes fadeut{from{bottom:30; opacity: 1;} to {bottom: 0px; opacity: 0;}}
 
+@-webkit-keyframes animatetop {from {top:-300px; opacity:0} to {top:0; opacity:1}}
+@keyframes animatetop {from {top:-300px; opacity:0}to {top:0; opacity:1}}
 /*** contact chip****/
 .chip{display: inline-block;padding: 0 25px;height: 50px;font-size: 16px;line-height: 50px;border-radius:25px;background-color: #284d2d;}
 .chip img{float: left;margin 0 10px; 0 -25px;height: 50px;width: 50px;border-radius: 50%;}

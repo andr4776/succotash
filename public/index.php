@@ -44,10 +44,10 @@
 <?php include_layout_template('header.php'); ?>
 
 	<ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
-		<li><a href="index.php"class="active">Gallery Photo</a></li>
-		<li><a href="photo.php?id=4" >Photograph</a></li>
-		<li><a href="admin/login.php" >Login</a></li>
+		<li><a href="index.php"class="active"> Gallery</a></li>
 		<li><a href="#">About</a></li>
+		<li><a href="photo.php?id=4"> Public</a></li>
+		<li><a href="admin/login.php" > Admin</a></li>
 		<li><a href="#" >VBlog</a></li>
 		<li><a href="#">InTouch</a></li>
 	</ul>
