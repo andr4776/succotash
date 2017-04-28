@@ -43,7 +43,7 @@ if (isset($_POST['submit'])) { // Form has been submitted.
  </nav>
 
  <div class="top-content">
-
+<div class="container">
  <div class="inner-bg">
 
  <div class="row">
@@ -60,13 +60,14 @@ if (isset($_POST['submit'])) { // Form has been submitted.
  <div class="row">
 
    <div class="col-sm-10 col-sm-offset-1 show-forms">
-                        <span class="show-register-form active">Register</span>
-                        <span class="show-forms-divider">/</span>
-                        <span class="show-login-form">Login</span>
-                      </div>
+                <span class="show-register-form active">Register</span>
+                <span class="show-forms-divider">/</span>
+                <span class="show-login-form">Login</span>
+    </div>
+ </div>
+
+ <div class="row register-form">
      <div class="col-sm-6 col-sm-offset-3 form-box">
-
-
            <h3>Admin assistant</h3>
 
          <div class="form-top-right">
@@ -75,8 +76,42 @@ if (isset($_POST['submit'])) { // Form has been submitted.
            <br/>
          </div>
 
+         <form role="form" action="" method="post" class="r-form">
+         	     <div class="form-group">
+         	       <label class="sr-only" for="r-form-first-name">First name</label>
+         	       <input type="text" name="r-form-first-name" placeholder="First name..." class="r-form-first-name form-control" id="r-form-first-name">
+         	        </div>
+
+         	       <div class="form-group">
+         	          <label class="sr-only" for="r-form-last-name">Last name</label>
+         	          <input type="text" name="r-form-last-name" placeholder="Last name..." class="r-form-last-name form-control" id="r-form-last-name">
+         	        </div>
+
+                <div class="form-group">
+         	        <label class="sr-only" for="r-form-email">Email</label>
+         	        <input type="text" name="r-form-email" placeholder="Email..." class="r-form-email form-control" id="r-form-email">
+         	         </div>
+
+                   <div class="form-group">
+                   <label class="sr-only" for="r-form-userName"></label>
+                     <input type="text" name="username" placeholder="User Name" class="form-userName form-control"  maxlength="30" value="<?php echo htmlentities($username); ?>">
+                   </div>
+                   <div class="form-group">
+                     <label class="sr-only" for="r-form-password">Password</label>
+                     <input type="password" name="password" placeholder="Password ..." class="form-password form-control"  maxlength="30" value="<?php echo htmlentities($password); ?>">
+                   </div>
+
+         			  <button type="submit" class="btn btn-block">Sign me up!</button>
+         	</form>
+   </div>
+
+   </div>
+
+
+<div class="row login-form">
+  <div class="col-sm-6 col-sm-offset-3 form-box">
          <div class="form-bottom">
-       <form action="login.php" method="post" class="login-form" >
+       <form role="form" action="" method="post" class="l-form">
 
           <div class="form-group">
           <label class="sr-only" for="form-userName"></label>
@@ -102,4 +137,7 @@ if (isset($_POST['submit'])) { // Form has been submitted.
      </div>
      </div>
  </div>
+</div>
+
+</div>
 <?php include_layout_template('footer_admin.php'); ?>
