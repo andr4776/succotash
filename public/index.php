@@ -44,8 +44,8 @@
 <?php include_layout_template('header.php'); ?>
 
 	<ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
-		<li><a href="index.php"class="active">Home</a></li>
-		<li><a href="register.php" >Register</a></li>
+		<li><a href="index.php"class="active">Gallery Photo</a></li>
+		<li><a href="photo.php?id=4" >Photograph</a></li>
 		<li><a href="admin/login.php" >Login</a></li>
 		<li><a href="#">About</a></li>
 		<li><a href="#" >VBlog</a></li>
@@ -157,7 +157,7 @@
 							<div class="col-sm-6 features-box wow fadeInLeft">
 								<div class="row">
 									<div class="col-sm-3 features-box-icon">
-										<a href="<?php "photo.php?id={$photo->id}";  ?>"<i class="fa fa-magnet"></i></a>
+										<a href="admin/comments.php"<i class="fa fa-magnet"></i></a>
 									</div>
 									<div class="col-sm-9">
 										<h3>Public</h3>

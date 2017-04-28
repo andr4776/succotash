@@ -10,8 +10,8 @@
 		</div>
 	</form>
 	<ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
-		<li><a href="index.php">Home</a></li>
-		<li><a href="register.php" class="active">Register</a></li>
+		<li><a href="index.php">Gallery Photo</a></li>
+		<li><a href="admin/comments.php" class="active">Photograph</a></li>
 		<li><a href="#">About</a></li>
 		<li><a href="#" >VBlog</a></li>
 		<li><a href="#">InTouch</a></li>
