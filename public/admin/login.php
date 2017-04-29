@@ -29,53 +29,52 @@ if (isset($_POST['submit'])) { // Form has been submitted.
 }
  ?>
  <?php include_layout_template('header_admin.php'); ?>
- <ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
-   <li><a href="../index.php">Home</a></li>
-   <li><a href="login.php" class="active">Admin</a></li>
-    <li><a href="" >Register</a></li>
+<ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
+		<li><a href="../index.php"> Gallery</a></li>
+		<li><a href="../about.php">About</a></li>
+        <li><a href="admin/login.php" class="active"> Admin</a></li>
+		<li><a href="../photo.php?id=4"> VBlog</a></li>
+		<li><a href="intouch.php">InTouch</a></li>
+	</ul>
+</div>
+</div>
 
-<!--<?php echo output_message($message);?>-->
-<div id="snackbar"><?php echo output_message($message);?></div>
+<?php echo output_message($message);?>
 
- </ul>
- </div>
- </div>
  </nav>
-<div class="container">
+
 
  <div class="top-content">
+ <div class="container">
 
 
 
- <div class="inner-bg">
 
- <div class="row">
-     <div class="col-sm-8 col-sm-offset-2 text">
-         <h1>Succotash<strong>Lenta</strong> Studio37</h1>
-         <div class="description">
-           <p>
+<!--<div clas="row">
+  <span ><a href="register.php" class="active">Register</a></span>
+  <span class="show-forms-divider">/</span>
+  <span><a href="login.php" >Login</a></span>
+</div>
+     </br>
+     <div class="divider-1 wow fadeInUp"><span></span></div>-->
+ <h2>Admin Area Access</h2>
 
-             <strong></strong></a>
-           </p>
+         <div class="form-top-right">
+           <i class="fa fa-lock"></i>
          </div>
-     </div>
- </div>
 
-
-<div class="row ">
-<div class="col-sm-8 col-sm-offset-2 text">
-
-       <form role="form" action="" method="post" class="l-form">
+<div class="col-sm-6 col-sm-offset-3 text">
+       <form role="form" action="index.php" name="loginForm" method="post" class="loginForm" onsubmit="(return formValidate());">
 
           <div class="form-group">
           <label class="sr-only" for="form-userName"></label>
-            <input type="text" name="username" placeholder="User Name" class="form-userName form-control"  maxlength="30" value="<?php echo htmlentities($username); ?>">
+            <input type="text" name="form-userName" placeholder="User Name" class="form-userName form-control"  maxlength="30" value="<?php echo htmlentities($username); ?>">
           </div>
 
           <p> </p>
            <div class="form-group">
              <label class="sr-only" for="form-password">Password</label>
-             <input type="password" name="password" placeholder="Password ..." class="form-password form-control"  maxlength="30" value="<?php echo htmlentities($password); ?>">
+             <input type="password" name="form-password" placeholder="Password ..." class="form-password form-control"  maxlength="30" value="<?php echo htmlentities($password); ?>">
            </div>
            <div class = "form-group">
              <div class = "col-sm-6 col-sm-offset-3 form-box">
@@ -84,14 +83,21 @@ if (isset($_POST['submit'])) { // Form has been submitted.
                </div>
              </div>
            </div>
-
-           <br>
-           <button onclick="myToast()" type="submit" class="btn btn-block btn-success"  name="submit" value="Login">Login </button>
+           <button  type="submit" class="btn btn-block btn-success"  name="submit" value="Login">Login </button>
        </form>
 
+
+     </div>
+ <div class="row">
+     <div class="col-sm-8 col-sm-offset-2 text">
+         <h1>Succotash<strong>Lenta</strong> Studio37</h1>
+         <div class="description">
+           <p>
+               <div class="divider-1 wow fadeInUp"><span></span></div>
+             <strong></strong></a>
+           </p>
+         </div>
      </div>
  </div>
-</div>
 
-</div>
 <?php include_layout_template('footer_admin.php'); ?>

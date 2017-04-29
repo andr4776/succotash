@@ -5,12 +5,12 @@ if (!$session->is_logged_in()) { redirect_to("login.php"); }
 
 <?php include_layout_template('header_admin.php'); ?>
 <ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
-  <li><a href="../index.php">Home</a></li>
-
-  <li><a href="index.php" class="active">Logged in </a></li>
-
-
-</ul>
+		<li><a href="../index.php"> Gallery</a></li>
+		<li><a href="../about.php">About</a></li>
+        <li><a href="admin/login.php" class="active"> Admin</a></li>
+		<li><a href="../photo.php?id=4"> VBlog</a></li>
+		<li><a href="../intouch.php">InTouch</a></li>
+	</ul>
 </div>
 </div>
 </nav>
