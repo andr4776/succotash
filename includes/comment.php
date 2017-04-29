@@ -40,7 +40,7 @@ class Comment extends DatabaseObject {
 		$mail = new PHPMailer();
 
 		$mail->IsSMTP();
-		$mail->Host     = "your.host.com";
+		$mail->Host     = "andr4776@outlook.com";
 		$mail->Port     = 25;
 		$mail->SMTPAuth = false;
 		$mail->Username = "your_username";
