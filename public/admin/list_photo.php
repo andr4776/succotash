@@ -17,10 +17,16 @@
       </div>
     </nav>
       <!-- Top content -->
+
       <div class="top-content">
+        <div class="col-sm-10 col-sm-offset-2 text">
+        <ul class="breadcrumb">
+            <li><a href="../login.php"> Admin</a></li>
+            <li><a href="index.php">Menu</a></li>
+            <li><a href="list_photo.php" class="active">List</a></li>
+          </ul>
+        </div>
                      <h1>Succotash<strong>Lenta</strong> Studio37</h1>
-                    <br/>
-<!--<div class="col-sm-8 col-sm-offset-2 text">-->
 
 <?php echo output_message($message); ?>
 

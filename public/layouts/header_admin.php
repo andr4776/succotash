@@ -14,7 +14,7 @@
 
         <!-- custom styles for the form -->
           <link rel="stylesheet" href= "../stylesheets/main.css">
-
+<link rel="stylesheet" href= "LAY_PATH.DS.'stylesheets'.DS.'main.css'">
         <!-- Favicon and touch icons -->
         <link rel="shortcut icon" href="../assets/ico/logo.png">
 
@@ -41,7 +41,7 @@
   					</ul>
   					<form class="navbar-form navbar-search-form disabled wow fadeInLeft" role="form" action="" method="post">
   						<div class="form-group">
-  							<input type="text"id="myInput" onkeyup="myFunction()"name="search" placeholder="Caption name..?" class="search form-control">
+  							<input type="text" id="myInput" onkeyup="myTableFun()"name="search" placeholder="Caption name..?" class="search form-control">
   						</div>
   					</form>
 

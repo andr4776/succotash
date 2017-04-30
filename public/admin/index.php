@@ -16,8 +16,14 @@ if (!$session->is_logged_in()) { redirect_to("login.php"); }
 </nav>
 
 <div class="top-content">
-
-<div class="inner-bg">
+	<div class="col-sm-10 col-sm-offset-2 text">
+	<ul class="breadcrumb">
+			<li><a href="logout.php"> Admin</a></li>
+			<li><a href="index.php" class="active">Menu</a></li>
+			<li><a href="list_photo.php">List</a></li>
+		</ul>
+	</div>
+<!--<div class="inner-bg">-->
 
 <div class="row">
     <div class="col-sm-8 col-sm-offset-2 text">
@@ -51,5 +57,5 @@ if (!$session->is_logged_in()) { redirect_to("login.php"); }
  </ul>
 </div>
 
-</div>
+<!--</div>-->
 <?php include_layout_template('footer_admin.php'); ?>

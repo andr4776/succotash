@@ -44,12 +44,19 @@ if (!$session->is_logged_in()) { redirect_to("login.php"); }
  </nav>
 
  <div class="top-content">
-
+	 <div class="col-sm-10 col-sm-offset-2 text">
+	<ul class="breadcrumb">
+			<li><a href="login.php"> Admin</a></li>
+			<li><a href="index.php">Menu</a></li>
+			<li><a href="list_photo.php">List</a></li>
+			<li><a href="photo_upload.php" class="active">Upload</a></li>
+		</ul>
+	</div>
  <div class="inner-bg">
 
  <div class="row">
      <div class="col-sm-8 col-sm-offset-2 text">
-         <h1>Succotash<strong>Lenta</strong> Studio37</h1>
+         <h2>Succotash<strong>Lenta</strong> Studio37</h2>
          <div class="description">
            <p>
 

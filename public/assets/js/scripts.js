@@ -14,7 +14,7 @@ jQuery(document).ready(function() {
     /*
         Login form Validation
     */
-  
+
     /*
         Search form
     */
@@ -132,9 +132,9 @@ jQuery(document).ready(function() {
 /*
     CUSTOM JAVASCRIPT --- VALIDATION ----- EMPTY FIELD
   */
-function required()
+function emailrequired()
 {
-var empt = document.forms["form1"]["form-email"].value;
+var empt = document.forms["form"]["form-email"].value;
   if (empt =="")
   {
     alert("Please input your email")
@@ -251,7 +251,7 @@ function EmptyValidation(formEmail)
     captionText.innerHTML = dots[slideIndex-1].alt;
   }
 
-  function myFunction() {
+  function myTable() {
     // Declare variables
     var input, filter, table, tr, td, i;
     input = document.getElementById("myInput");

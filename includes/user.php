@@ -41,7 +41,7 @@ class User extends DatabaseObject {
 	  global $database;
 	  $sql = "SELECT COUNT(*) FROM ".self::$table_name;
     $result_set = $database->query($sql);
-	  $row = $database->fetch_array($result_set);
+	  $row = $database->fetch_assoc($result_set);
     return array_shift($row);
 	}
 

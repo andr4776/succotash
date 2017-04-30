@@ -7,7 +7,7 @@
 <script src="../assets/js/scripts.js"></script>
 <script src="public/assets/js/scripts.js"></script>
 <script src="../assets/js/wow.min.js"></script>
-<script src="javasripsts/jscript.js"></script>
+<script src="../jscript.js"></script>
 </div>
 <br/>
 <div class="col-sm-8 col-sm-offset-2 text">

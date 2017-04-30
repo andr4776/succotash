@@ -1,20 +1,17 @@
-<?php
-require_once("../../includes/initialize.php");?>
-
-<?php>
+<?php require_once("../../includes/initialize.php");
 if($session->is_logged_in()) {
   redirect_to("index.php");
 }
 
-var_dump($_POST);
+
 if (isset($_POST['submit'])) { // Form has been submitted.
-var_dump($_POST);
+
   $username = trim($_POST['username']);
   $password = trim($_POST['password']);
-var_dump($_POST);
+
   // Check database to see if username/password exist.
 	$found_user = User::authenticate($username, $password);
-var_dump($_POST);
+
   if ($found_user) {
     $session->login($found_user);
     redirect_to("index.php");
@@ -43,7 +40,6 @@ var_dump($_POST);
 
  </nav>
 
-
  <div class="top-content">
  <div class="container">
 
@@ -67,14 +63,14 @@ var_dump($_POST);
        <form role="form" action="" name="form" method="POST" class="login-form" >
 
           <div class="form-group">
-          <label class="sr-only" for="form-username"></label>
-            <input type="text" name="form-username"  placeholder="User Name" class="form-username form-control"  maxlength="30" value="<?php echo htmlentities($username); ?>">
+          <label class="sr-only" for="username"></label>
+            <input type="text" name="username"  placeholder="User Name" class="username form-control"  maxlength="30" value="<?php htmlentities($username); ?>">
           </div>
 
           <p> </p>
            <div class="form-group">
-             <label class="sr-only" for="form-password">Password</label>
-             <input type="password" name="form-password" placeholder="Password ..." class="form-password form-control"  maxlength="30" value="<?php echo htmlentities($password); ?>">
+             <label class="sr-only" for="password">Password</label>
+             <input type="password" name="password" placeholder="Password ..." class="password form-control"  maxlength="30" value="<?php htmlentities($password); ?>">
            </div>
            <div class = "form-group">
              <div class = "col-sm-6 col-sm-offset-3 form-box">
