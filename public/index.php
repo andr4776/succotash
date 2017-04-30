@@ -1,21 +1,6 @@
 <?php require_once("../includes/initialize.php"); ?>
+
 <?php
-
-	// 1. the current page number ($current_page)
-	$page = !empty($_GET['page']) ? (int)$_GET['page'] : 1;
-
-	// 2. records per page ($per_page)
-	$per_page = 5;
-
-	// 3. total record count ($total_count)
-	$total_count = Photograph::count_all();
-
-    // find
-	$pagination = new Pagination($page, $per_page, $total_count);
-
-	//  find the records for this pa<?php require_once("../includes/initialize.php"); ?>
-<?php
-
 	// 1. the current page number ($current_page)
 	$page = !empty($_GET['page']) ? (int)$_GET['page'] : 1;
 
@@ -38,18 +23,14 @@
 	// maintain the current page (or store $page in $session)
 
 ?>
-
-
-
 <?php include_layout_template('header.php'); ?>
 
 	<ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
-		<li><a href="index.php"class="active"> Gallery</a></li>
-		<li><a href="#">About</a></li>
-		<li><a href="photo.php?id=4"> Public</a></li>
-		<li><a href="admin/login.php" > Admin</a></li>
-		<li><a href="#" >VBlog</a></li>
-		<li><a href="#">InTouch</a></li>
+		<li><a href="index.php" class="active"> Gallery</a></li>
+		<li><a href="about.php">About</a></li>
+        <li><a href="admin/login.php" > Admin</a></li>
+		<li><a href="photo.php?id=4"> VBlog</a></li>
+		<li><a href="intouch.php">InTouch</a></li>
 	</ul>
 </div>
 </div>

@@ -10,6 +10,11 @@ jQuery(document).ready(function() {
     */
     new WOW().init();
 
+
+    /*
+        Login form Validation
+    */
+  
     /*
         Search form
     */
@@ -20,7 +25,6 @@ jQuery(document).ready(function() {
     	$('.navbar-search-form input.search').val('').focus();
     });
 
-});
 /*
 		 forms show/hide
  */
@@ -276,3 +280,4 @@ function EmptyValidation(formEmail)
     // after 4 seconds, remove the show cladd from div
   setTimeout(function(){x.className = x.className.replace("show","");},4000);
   }
+});

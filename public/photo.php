@@ -3,11 +3,10 @@
 
 	<ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
 		<li><a href="index.php"> Gallery</a></li>
-		<li><a href="#">About</a></li>
-		<li><a href="photo.php?id=4" class ="active"> Public</a></li>
+		<li><a href="about.php">About</a></li>
 		<li><a href="admin/login.php" > Admin</a></li>
-		<li><a href="#" >VBlog</a></li>
-		<li><a href="#">InTouch</a></li>
+		<li><a href="photo.php?id=5" class ="active"> VBlog</a></li>
+		<li><a href="intouch.php">InTouch</a></li>
 	</ul>
 </div>
 </div>
@@ -55,7 +54,8 @@
 	}
 	$comments = $photo->comments();
 ?>
-<a href="index.php">&laquo; Back</a><br />
+
+    <a href="index.php">&laquo; Back</a><br />
 <br />
 
 <div style="margin-left: 20px;">
@@ -91,7 +91,7 @@
 
 </div>
   <?php echo output_message($message); ?>
-	
+
   <form action="photo.php?id=<?php echo $photo->id; ?>" method="post">
     <table>
       <tr>

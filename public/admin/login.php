@@ -1,20 +1,20 @@
 <?php
-require_once("../../includes/initialize.php");
+require_once("../../includes/initialize.php");?>
 
-
+<?php>
 if($session->is_logged_in()) {
   redirect_to("index.php");
 }
 
-
+var_dump($_POST);
 if (isset($_POST['submit'])) { // Form has been submitted.
-
+var_dump($_POST);
   $username = trim($_POST['username']);
   $password = trim($_POST['password']);
-
+var_dump($_POST);
   // Check database to see if username/password exist.
 	$found_user = User::authenticate($username, $password);
-
+var_dump($_POST);
   if ($found_user) {
     $session->login($found_user);
     redirect_to("index.php");
@@ -39,7 +39,7 @@ if (isset($_POST['submit'])) { // Form has been submitted.
 </div>
 </div>
 
-<?php echo output_message($message);?>
+
 
  </nav>
 
@@ -47,7 +47,7 @@ if (isset($_POST['submit'])) { // Form has been submitted.
  <div class="top-content">
  <div class="container">
 
-
+<?php echo output_message($message);?>
 
 
 <!--<div clas="row">
@@ -64,11 +64,11 @@ if (isset($_POST['submit'])) { // Form has been submitted.
          </div>
 
 <div class="col-sm-6 col-sm-offset-3 text">
-       <form role="form" action="index.php" name="loginForm" method="post" class="loginForm" onsubmit="(return formValidate());">
+       <form role="form" action="" name="form" method="POST" class="login-form" >
 
           <div class="form-group">
-          <label class="sr-only" for="form-userName"></label>
-            <input type="text" name="form-userName" placeholder="User Name" class="form-userName form-control"  maxlength="30" value="<?php echo htmlentities($username); ?>">
+          <label class="sr-only" for="form-username"></label>
+            <input type="text" name="form-username"  placeholder="User Name" class="form-username form-control"  maxlength="30" value="<?php echo htmlentities($username); ?>">
           </div>
 
           <p> </p>
@@ -83,7 +83,7 @@ if (isset($_POST['submit'])) { // Form has been submitted.
                </div>
              </div>
            </div>
-           <button  type="submit" class="btn btn-block btn-success"  name="submit" value="Login">Login </button>
+           <button  type="submit" class="btn btn-block btn-success"  name="submit">Login </button>
        </form>
 
 

@@ -132,8 +132,10 @@ require_once("../includes/initialize.php");?>
                           <a href="admin/list_photo.php"<i class="fa fa-archive"></i></a>
                         </div>
                     </div>
-                    <div class="divider-1 wow fadeInUp"></div>
+
                 </div>
+								  <div class="divider-1 wow fadeInUp"></div>
           </div>
           <br/>
+
           <?php include_layout_template('footer.php'); ?>

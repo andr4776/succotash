@@ -37,7 +37,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.php">Succotash home </a>
+					<a class="navbar-brand" href="index.php">Succotash Lenta Studio37 </a>
 				</div>
 
         <div class="collapse navbar-collapse" id="top-navbar-1">
@@ -46,7 +46,7 @@
           </ul>
           <form class="navbar-form navbar-search-form disabled wow fadeInLeft" role="form" action="" method="post">
             <div class="form-group">
-              <input type="text"id="myInput" onkeyup="myFunction()"name="search" placeholder="Search Caption..." class="search form-control">
+              <input type="text"id="myInput" name="search" placeholder="Search ..." class="search form-control">
             </div>
           </form>
 <!--

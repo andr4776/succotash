@@ -11,9 +11,7 @@ if (isset($_POST['submit'])) { // Form has been submitted.
 
   $username = trim($_POST['username']);
   $password = trim($_POST['password']);
-  $username = trim($_POST['first_name']);
-  $password = trim($_POST['last_name']);
-  $username = trim($_POST['email']);
+
 
 
   // Check database to see if username/password exist.
@@ -84,7 +82,7 @@ if (isset($_POST['submit'])) { // Form has been submitted.
           <br/>
         </div>
 
-        <form role="form" action="" method="post" class="r-form">
+        <form role="form" action="" method="post" class="r-form" onsubmit="">
               <div class="form-group">
                 <label class="sr-only" for="r-form-first-name">First name</label>
                 <input type="text" name="r-form-first-name" placeholder="First name..." class="r-form-first-name form-control" id="r-form-first-name">
@@ -102,7 +100,7 @@ if (isset($_POST['submit'])) { // Form has been submitted.
 
                   <div class="form-group">
                   <label class="sr-only" for="r-form-userName"></label>
-                    <input type="text" name="first_name" placeholder="First Name.." class="form-first-name form-control"  maxlength="30" value="<?php echo htmlentities($first_name); ?>">
+                    <input type="text" name="first_name" placeholder="First Name.." class="form-first-name form-control"  maxlength="30" value="<?php echo htmlentities(); ?>">
                   </div>
                   <div class="form-group">
                     <label class="sr-only" for="r-form-password">Password</label>
