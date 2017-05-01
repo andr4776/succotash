@@ -21,6 +21,8 @@ if (!$session->is_logged_in()) { redirect_to("login.php"); }
 			<li><a href="logout.php"> Admin</a></li>
 			<li><a href="index.php" class="active">Menu</a></li>
 			<li><a href="list_photo.php">List</a></li>
+			<li><a href="logfile.php">Logs</a></li>
+			<li><a href="photo_upload.php" >Upload</a></li>
 		</ul>
 	</div>
 <!--<div class="inner-bg">-->

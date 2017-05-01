@@ -1,4 +1,37 @@
 <?php require_once("../../includes/initialize.php"); ?>
+
+<?php include_layout_template('header_admin.php'); ?>
+<ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
+		<li><a href="../index.php"> Gallery</a></li>
+		<li><a href="../about.php">About</a></li>
+        <li><a href="admin/login.php" class="active"> Admin</a></li>
+		<li><a href="../photo.php?id=4"> VBlog</a></li>
+		<li><a href="../intouch.php">InTouch</a></li>
+	</ul>
+        </div>
+      </div>
+    </nav>
+
+ <!--<div class="top-content">-->
+
+		 <div class="top-content">
+
+   <div class="col-sm-10 col-sm-offset-2 text">
+   <ul class="breadcrumb">
+       <li><a href="../login.php"> Admin</a></li>
+       <li><a href="index.php">Menu</a></li>
+			  <li><a href="delete_comment.php" class="active">Comments</a></li>
+       <li><a href="logfile.php" >Logs</a></li>
+       <li><a href="list_photo.php">List</a></li>
+       <li><a href="photo_upload.php">Upload</a></li>
+
+     </ul>
+
+<h2>Succotash<strong>Lenta</strong> Studio37</h2>
+
+</div>
+   </div>
+
 <?php if (!$session->is_logged_in()) { redirect_to("login.php"); } ?>
 <?php
 	if(empty($_GET['id'])) {
@@ -15,7 +48,7 @@
 	$comments = $photo->comments();
 
 ?>
-<?php include_layout_template('admin_header.php'); ?>
+
 
 <a href="list_photos.php">&laquo; Back</a><br />
 <br />
@@ -42,6 +75,6 @@
   <?php endforeach; ?>
   <?php if(empty($comments)) { echo "No Comments."; } ?>
 </div>
-
-
-<?php include_layout_template('admin_footer.php'); ?>
+</div>
+</div>
+<?php include_layout_template('footer_admin.php'); ?>

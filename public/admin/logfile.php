@@ -2,7 +2,7 @@
 if (!$session->is_logged_in()) { redirect_to("login.php"); }
 
   $logfile = SITE_ROOT.DS.'logs'.DS.'log.txt';
-
+  
   if($_GET['clear'] == 'true') {
 		file_put_contents($logfile, '');
 	  // Add the first log entry
@@ -11,7 +11,7 @@ if (!$session->is_logged_in()) { redirect_to("login.php"); }
     // have "clear=true" anymore
     redirect_to('logfile.php');
   }
-  
+
 ?>
 
 <?php include_layout_template('header_admin.php'); ?>
@@ -27,23 +27,29 @@ if (!$session->is_logged_in()) { redirect_to("login.php"); }
     </nav>
 
  <div class="top-content">
-
+   <div class="inner-bg">
    <div class="col-sm-10 col-sm-offset-2 text">
    <ul class="breadcrumb">
        <li><a href="../login.php"> Admin</a></li>
        <li><a href="index.php">Menu</a></li>
        <li><a href="logfile.php" class="active">Logs</a></li>
+       <li><a href="list_photo.php">List</a></li>
+       <li><a href="photo_upload.php">Upload</a></li>
      </ul>
    </div>
-<h1>Succotash<strong>Lenta</strong> Studio37</h1>
+<div class="col-sm-6 col-sm-offset-3 text">
+<h2>Succotash<strong>Lenta</strong> Studio37</h2>
+
 <h2>Logs</h2>
 
-<p><a href="logfile.php?clear=true">Clear log file</a><p>
+<button class ="btn btn-block bnt-log"<a href="logfile.php?clear=true">Clear logs</a></button>
+
+
 
 <?php
 
   if( file_exists($logfile) && is_readable($logfile) &&
-			$handle = fopen($logfile, 'w')) {  // read
+			$handle = fopen($logfile, 'r')) {  // read
     echo "<ul class=\"log-entries\">";
 		while(!feof($handle)) {
 			$entry = fgets($handle);
@@ -58,5 +64,5 @@ if (!$session->is_logged_in()) { redirect_to("login.php"); }
   }
 
 ?>
-
+</div>
 <?php include_layout_template('footer_admin.php'); ?>

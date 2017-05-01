@@ -15,6 +15,7 @@
 <!-- Top content -->
 
 <div class="top-content">
+	
 <?php
   if(empty($_GET['id'])) {
     $session->message("No photograph ID was provided.");
@@ -39,9 +40,8 @@
 			// Send email
 			$new_comment->try_to_send_notification();
 
-	    // Important!  You could just let the page render from here.
-	    // But then if the page is reloaded, the form will try
-			// to resubmit the comment. So redirect instead:
+	    // if the page is reloaded, the form will try
+			// to resubmit the comment. redirect
 	    redirect_to("photo.php?id={$photo->id}");
 
 		} else {
@@ -92,24 +92,26 @@
 </div>
   <?php echo output_message($message); ?>
 
+
   <form action="photo.php?id=<?php echo $photo->id; ?>" method="post">
     <table>
       <tr>
         <td>Your name:</td>
-        <td><input type="text" name="author" value="<?php echo $author; ?>" /></td>
+				<div class="col-sm-4 col-sm-offset-6 text">
+        <td><input type="text" placeholder="Your name"name="author" value="<?php echo $author; ?>" /></td>
       </tr>
       <tr>
         <td>Your comment:</td>
-        <td><textarea name="body" cols="40" rows="8"><?php echo $body; ?></textarea></td>
+        <td><textarea name="body" placeholder="Your comment" cols="40" rows="8"><?php echo $body; ?></textarea></td>
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td><input type="submit" name="submit" value="Submit Comment" /></td>
+        <td><input type="submit"name="submit" value="Submit Comment" /></td>
       </tr>
     </table>
   </form>
 </div>
-
+</div>
 
 </div>
 

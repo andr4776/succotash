@@ -3,7 +3,7 @@ jQuery(document).ready(function() {
     /*
         Background
     */
-    $('.top-content').backstretch("../../assets/img/backgrounds/1.jpg");
+    $('.top-content').backstretch("../assets/img/backgrounds/1.jpg");
 
     /*
         Wow
@@ -251,7 +251,7 @@ function EmptyValidation(formEmail)
     captionText.innerHTML = dots[slideIndex-1].alt;
   }
 
-  function myTable() {
+  function myTableFun() {
     // Declare variables
     var input, filter, table, tr, td, i;
     input = document.getElementById("myInput");

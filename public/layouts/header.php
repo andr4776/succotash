@@ -17,7 +17,7 @@
 
         <!-- custom css -->
         <link rel="stylesheet" href= "stylesheets/main.css">
-
+        <link rel="stylesheet" href= "LAY_PATH.DS.'stylesheets'.DS.'main.css'">
 
         <!-- Favicon and touch icons -->
         <link rel="shortcut icon" href="LAY_PATH.DS.'assets/ico/logo.png'">

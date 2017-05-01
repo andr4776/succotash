@@ -10,11 +10,12 @@
   $photo = Photograph::find_by_id($_GET['id']);
   if($photo && $photo->destroy()) {
     $session->message("The photo {$photo->filename} was deleted.");
-    redirect_to('list_photos.php');
+    redirect_to('list_photo.php');
   } else {
     $session->message("The photo could not be deleted.");
-    redirect_to('list_photos.php');
+    redirect_to('list_photo.php');
   }
 
 ?>
+
 <?php if(isset($database)) { $database->close_connection(); } ?>

@@ -1,5 +1,8 @@
 jQuery(document).ready(function() {
-
+  /*
+      Background
+  */
+  $('.top-content').backstretch("workspace_succotash/public/assets/img/backgrounds/1.jpg");
   /*
           Forms show / hide
       */

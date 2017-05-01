@@ -21,9 +21,11 @@
       <div class="top-content">
         <div class="col-sm-10 col-sm-offset-2 text">
         <ul class="breadcrumb">
-            <li><a href="../login.php"> Admin</a></li>
+            <li><a href="logout.php"> Admin</a></li>
             <li><a href="index.php">Menu</a></li>
             <li><a href="list_photo.php" class="active">List</a></li>
+            <li><a href="logfile.php">Logs</a></li>
+            <li><a href="photo_upload.php">Upload</a></li>
           </ul>
         </div>
                      <h1>Succotash<strong>Lenta</strong> Studio37</h1>

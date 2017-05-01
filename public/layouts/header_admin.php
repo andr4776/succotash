@@ -7,14 +7,14 @@
 
         <!-- core CSS -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
-        <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css">
-		    <link rel="stylesheet" href="../assets/css/form-elements.css">
-        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/font-awesome/css/font-awesome.min.css">
+		    <link rel="stylesheet" href="../../assets/css/form-elements.css">
+        <link rel="stylesheet" href="../../assets/css/style.css">
 
         <!-- custom styles for the form -->
           <link rel="stylesheet" href= "../stylesheets/main.css">
-<link rel="stylesheet" href= "LAY_PATH.DS.'stylesheets'.DS.'main.css'">
+          <link rel="stylesheet" href= "LAY_PATH.DS.'stylesheets'.DS.'main.css'">
         <!-- Favicon and touch icons -->
         <link rel="shortcut icon" href="../assets/ico/logo.png">
 
@@ -41,7 +41,7 @@
   					</ul>
   					<form class="navbar-form navbar-search-form disabled wow fadeInLeft" role="form" action="" method="post">
   						<div class="form-group">
-  							<input type="text" id="myInput" onkeyup="myTableFun()"name="search" placeholder="Caption name..?" class="search form-control">
+  							<input type="text" id="myInput" onkeyup="return(myTableFun());" placeholder="Caption name..? ">
   						</div>
   					</form>
 

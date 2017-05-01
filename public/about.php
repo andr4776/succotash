@@ -14,6 +14,7 @@
 </div>
 </nav>
 <div class="top-content">
+	<div class="inner-bg">
 
 <!--  <div class="features-container section-container">
       <div class="col-sm-2 features-box wow fadeInLeft">
@@ -45,7 +46,7 @@
       </div>
 </div>-->
 
-      </div>
+
       <div class="features-container section-container">
 
           <div class="col-sm-12 text wow fadeInLeft">
@@ -56,4 +57,6 @@
 
         </div>
   </div>
+</div>
+</div>
 <?php include_layout_template('footer.php'); ?>
