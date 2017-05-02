@@ -1,5 +1,4 @@
 <?php require_once("../../includes/initialize.php"); ?>
-
 <?php include_layout_template('header_admin.php'); ?>
 <ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
 		<li><a href="../index.php"> Gallery</a></li>

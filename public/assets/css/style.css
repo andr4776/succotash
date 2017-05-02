@@ -255,7 +255,7 @@ only screen and (                min-resolution: 2dppx) {
 
 }
 /**** admin assistant as in chip ****/
-.chip{display:inline-block;padding: 0 25px;height: 50px;font-size: 50px; border-radius: 25px;background-color: darkslategrey;}
+.chip{display:inline-block;padding: 0 25px;height: 50px;font-size: 50px; border-radius: 25px;background-color:  #7babb5;}
 /****** style buttons  *****/
 .buttonload{background-color:#128682;border: none;color:#08c877;padding: 8px 26px;font-size: 16px;}
 /**** toast message *****/

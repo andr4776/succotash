@@ -44,6 +44,15 @@ if (!$session->is_logged_in()) { redirect_to("login.php"); }
  </nav>
 
  <div class="top-content">
+	 <div class="col-sm-8 col-sm-offset-4 text">
+	 <div class="chip">
+		 <!--<img src="../assets/img/logo-4.jpg" alt="admin user" width="93"height="93">-->
+		 <?php if ($session) {
+		 $user = User::find_by_id(1);
+		 echo "&nbsp;"."&nbsp;"."Logged in as: ". $user->first_name; }
+		 ?>
+	 </div>
+	 </div>
 
 	 <div class="col-sm-10 col-sm-offset-2 text">
 	<ul class="breadcrumb">

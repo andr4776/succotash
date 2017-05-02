@@ -15,6 +15,8 @@ if (!$session->is_logged_in()) { redirect_to("login.php"); }
 ?>
 
 <?php include_layout_template('header_admin.php'); ?>
+
+
 <ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
 		<li><a href="../index.php"> Gallery</a></li>
 		<li><a href="../about.php">About</a></li>
@@ -27,6 +29,15 @@ if (!$session->is_logged_in()) { redirect_to("login.php"); }
     </nav>
 
  <div class="top-content">
+   <div class="col-sm-8 col-sm-offset-4 text">
+   <div class="chip">
+   	<!--<img src="../assets/img/logo-4.jpg" alt="admin user" width="93"height="93">-->
+   	<?php if ($session) {
+   	$user = User::find_by_id(1);
+   	echo "&nbsp;"."&nbsp;"."Logged in as: ". $user->first_name; }
+   	?>
+   </div>
+   </div>
    <div class="inner-bg">
    <div class="col-sm-10 col-sm-offset-2 text">
    <ul class="breadcrumb">
@@ -37,6 +48,7 @@ if (!$session->is_logged_in()) { redirect_to("login.php"); }
        <li><a href="photo_upload.php">Upload</a></li>
      </ul>
    </div>
+
 <div class="col-sm-6 col-sm-offset-3 text">
 <h2>Succotash<strong>Lenta</strong> Studio37</h2>
 

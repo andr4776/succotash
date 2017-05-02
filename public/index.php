@@ -39,6 +39,9 @@
 <!-- Top content -->
 
 		<div class="top-content">
+			<div class="col-sm-8 col-sm-offset-4 text">
+		
+			</div>
 				<div class="container">
 
 						<div class="row">

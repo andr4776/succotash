@@ -7,6 +7,7 @@
 <script src="../../assets/js/jquery.backstretch.min.js"></script>
 <script src="../../assets/js/wow.min.js"></script>
 <script src="../../public/assets/js/scripts.js"></script>
+<script src="../assets/js/scripts.js"></script>
 <script src="../../public/javascripts/jscript.js"></script>
 </div>
 <br/>

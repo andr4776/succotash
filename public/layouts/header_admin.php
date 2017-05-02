@@ -43,6 +43,7 @@
   						<div class="form-group">
   							<input type="text" id="myInput" onkeyup="return(myTableFun());" placeholder="Caption name..? ">
   						</div>
+              
   					</form>
 
 
