@@ -2,7 +2,7 @@
 if (!$session->is_logged_in()) { redirect_to("login.php"); }
 
   $logfile = SITE_ROOT.DS.'logs'.DS.'log.txt';
-  
+  $logfile = isset($_GET['logfile']) ? $_GET['logfile'] : '';
   if($_GET['clear'] == 'true') {
 		file_put_contents($logfile, '');
 	  // Add the first log entry
@@ -42,14 +42,14 @@ if (!$session->is_logged_in()) { redirect_to("login.php"); }
 
 <h2>Logs</h2>
 
-<button class ="btn btn-block bnt-log"<a href="logfile.php?clear=true">Clear logs</a></button>
+<button class ="btn bnt-primary"<a href="logfile.php?clear=true">Clear logs</a></button>
 
 
 
 <?php
 
   if( file_exists($logfile) && is_readable($logfile) &&
-			$handle = fopen($logfile, 'r')) {  // read
+			$handle = fopen($logfile, 'w')) {  // read
     echo "<ul class=\"log-entries\">";
 		while(!feof($handle)) {
 			$entry = fgets($handle);
