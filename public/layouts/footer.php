@@ -7,7 +7,7 @@
 <script src="public/assets/js/jquery.countdown.min.js"></script>
 <script src="../assets/js/wow.min.js"></script>
 <script src="../public/assets/js/scripts.js"></script>
-<script src="javascripts/jscript.js"></script>
+<script src="/public/javascripts/jscript.js"></script>
 
 <div id="footer">Copyright <?php echo date("Y", time()); ?>, Andre Roman </div>
 </body>

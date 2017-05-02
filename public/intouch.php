@@ -51,7 +51,7 @@
                                 </div>
                             </div>
                             <div class="subscribe wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="3s">
-	                			<form class="form-inline" role="form" action="assets/subscribe.php" method="post">
+	                			<form class="form-inline" name="form1 "role="form" action="assets/subscribe.php" method="post">
 			                    	<div class="form-group">
 			                    		<label class="sr-only" for="subscribe-email">Email address</label>
 															<div class="col-sm-4 col-sm-offset-6 text">
@@ -59,7 +59,7 @@
 															</div>
 			                        </div>
 															<div class="col-sm-4 col-sm-offset-6 text">
-			                        <button type="submit" onsubmit="return(myToast());"class="btn bnt-info" >Subscribe</button>
+			                        <button type="submit" onclick="ValidateEmail()"class="btn bnt-info" >Subscribe</button>
 														</div>
 
 			                    </form>

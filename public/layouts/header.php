@@ -25,7 +25,7 @@
 
     </head>
 
-    <body>
+    <body onload='document.form1.text1.focus()'>
 
 		<!-- Top menu -->
 		<nav class="navbar navbar-inverse" role="navigation">
